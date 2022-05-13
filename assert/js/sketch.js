@@ -8,7 +8,7 @@ var dot_clr;
 
 function setup() {
     var canvas = createCanvas(windowWidth, windowHeight);
-    // canvas.parent('sketch-container');
+    canvas.parent('sketch-container');
 
     /* Background Part */
     R_size = width / span + 1 ;
