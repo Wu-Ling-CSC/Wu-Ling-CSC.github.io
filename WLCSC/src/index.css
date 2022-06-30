@@ -263,6 +263,15 @@ input:checked + .slider:before {
   color :rgb(252, 117, 33);
 }
 
+.react-p5{
+  overflow: hidden;
+}
+
+.Dark .react-p5{
+  background-color: #000;
+}
+
+
 /* Advantage */
 
 .Advantage{

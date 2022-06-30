@@ -249,7 +249,7 @@ const Header = ( props )=>{
 const Main = ( props )=>{
     return(
         <div className={'Main'}>
-            {/* <TextBackground /> */}
+            <TextBackground />
             {/* <GameMachine /> */}
             <Advantage />
             {/* <Course />
