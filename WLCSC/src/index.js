@@ -9,12 +9,15 @@ import './index.css';
 
 import LogoImage from './images/WLCSC_Logo.png';
 
-const ButtonStyle = {
 
-};
+const DARK = 'Dark ';
+const LIGHT = 'Light ';
+
+const T = ( t )=> ( t===1? DARK:LIGHT);
+
 const Button = ( props )=>{
    return (
-        <button className="button-top" >{ props.text }</button>
+        <button className={"button-top"} >{ props.text }</button>
    );
 };
 
@@ -164,27 +167,21 @@ class GameMachine extends React.Component {
 
 }
 
-class Header extends React.Component {
-    constructor( props ){
-        super( props );
+const Header = ( props )=>{
+    return (
+        <header>
+            <div className={ 'Header'} >
+                <Logo/>
+                <Buttons/>
+                <Change callback={ props.callback }/>
+            </div>
+        </header>
+    ); 
+};
 
-    }
-
-    render(){
-        return (
-            <header>
-                <div className='Header' style={ {backgroundColor: ( this.props.theme===1 ? ThemeStyle.Dark.Header : ThemeStyle.Light.Header ) } }>
-                    <Logo/>
-                    <Buttons/>
-                    <Change callback={ this.props.callback }/>
-                </div>
-            </header>
-        ); 
-    }
-}
 const Main = ( props )=>{
     return(
-        <div className='Main'>
+        <div className={'Main'}>
             {/* <TextBackground /> */}
             {/* <GameMachine />
             <Advantage />
@@ -197,7 +194,7 @@ const Main = ( props )=>{
 const Footer = ( props )=>{
     return (
         <footer>
-            <div className ='Footer'>
+            <div className={'Footer'}>
                 {/* <Links />
                 <Copyright /> */}
             </div>
@@ -227,21 +224,12 @@ class App extends React.Component {
 
         // console.log( "App" ,this.handleTheme() );
         return (
-            <div className='App'>
-                <Header theme={ this.state.IsDark } callback={ ()=>this.handleTheme() }  />
-                <Main theme={ this.state.IsDark}/>
-                <Footer theme={ this.state.IsDark}/>
+            <div className={ T(this.state.IsDark)+'App'}>
+                <Header callback={ ()=>this.handleTheme() }  />
+                <Main/>
+                <Footer/>
             </div>
         );
-    }
-}
-
-const ThemeStyle = {
-    Dark : {
-        Header : '#000',
-    },
-    Light :{
-        Header : '#fff',
     }
 }
 
