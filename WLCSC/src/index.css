@@ -246,6 +246,7 @@ input:checked + .slider:before {
 
 /*---- Main ----  */
 
+/* Typing */
 .Typing {
   position: absolute;
   top:30%;
@@ -260,5 +261,44 @@ input:checked + .slider:before {
 
 .Light .Typing{
   color :rgb(252, 117, 33);
+}
+
+/* Advantage */
+
+/* .Advantage{
+} */
+
+.Light .Advantage {
+  background-color: #fff;
+  color: #000;
+}
+
+.Dark .Advantage{
+  background-color: #000;
+  color: #fff;
+}
+
+.AdvCard{
+  width: 250px;
+  height:400px;
+  display:inline-block;
+  border: solid 1px #fff;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 53px ;
+}
+
+.AdvCard img{
+  background-color: #fff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.AdvCard h2{
+  margin-bottom: 10px;
 }
 
