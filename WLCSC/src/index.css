@@ -277,6 +277,7 @@ input:checked + .slider:before {
 .Advantage{
   padding-top: 30px;
   padding-bottom: 40px;
+  text-align: center;
 }
 
 .Light .Advantage {
@@ -320,6 +321,26 @@ input:checked + .slider:before {
 .Dark .AdvCard{
   /* box-shadow: rgba(255, 255, 255, 0.5) 0px 50px 100px -20px, rgba(255, 255, 255, 0.633) 0px 30px 60px -30px; */
   box-shadow: rgba(240, 133, 46, 0.4) 5px 5px, rgba(240, 133, 46, 0.3) 10px 10px, rgba(2240, 133, 46, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+}
+
+/* .Course {
+  
+} */
+
+.CourseCard {
+  display: flex;
+}
+
+.CourseCard .ImgBox{
+  width: 50px;
+}
+
+.ImgBox img{
+  width: 50px;
+}
+
+.flipped{
+  direction: rtl;
 }
 
 

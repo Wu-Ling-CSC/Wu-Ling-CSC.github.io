@@ -214,6 +214,8 @@ const AdvantageList = [
     },
 ];
 
+
+
 const AdvCard = (props)=>{
     return (
         <div className='AdvCard'>
@@ -226,10 +228,63 @@ const AdvCard = (props)=>{
 
 const Advantage = ()=>{
 
-    console.log( AdvantageList );
+    // console.log( AdvantageList );
     return (
         <div className='Advantage'>
+            <h1>Advantages ?</h1>
             { AdvantageList.map( (ele)=> < AdvCard ele={ele} key={ele.icon}/> ) }
+        </div>
+    );
+}
+
+const CourseList = [
+    { 
+        title:'Algorithm',
+        icon:HackerImage,
+        subtitle:'qtqtqtqtqtsdgkgnregnqoirgnkabal blkb wegewgwegwegwegwgwegewg',
+    },
+    { 
+        title:'Web Devlopment',
+        icon:RocketImage,
+        subtitle:'sdgknbaorn awiognwao waasfafafasfa wefwefwegwegweg fqfqefwegew',
+    },
+    { 
+        title:'Cyber Security',
+        icon:SocialcareImage,
+        subtitle:'wirnhwon knlkfnbsmngo; awoiethubndfkb aegegwegweg w wewegweg  g ewwe',
+    },
+    { 
+        title:'Mechine Learing',
+        icon:ComputerImage,
+        subtitle:'Learn computer science and all sorts of cool stuff with friends and seniors',
+    },
+    { 
+        title:'Linux',
+        icon:ComputerImage,
+        subtitle:'Learn computer science and all sorts of cool stuff with friends and seniors',
+    },
+];
+
+
+
+const CourseCard= (props)=>{
+    return (
+        <div className={'CourseCard '+(props.ith%2===1 ? 'flipped':'') }>
+            <div className='Text'>
+                <h2>{ props.ele.title }</h2>
+                <p>{ props.ele.subtitle }</p>
+            </div>
+            <div className='ImgBox'>
+                <img src={props.ele.icon}  alt='course'/>
+            </div>
+        </div>
+    );
+}
+const Course = ()=>{
+    return (
+        <div className='Course'>
+            <h1>Courses ?</h1>
+            { CourseList.map( (ele , idx )=><CourseCard ele={ele} ith={ idx } key={ele.title}/>) }
         </div>
     );
 }
@@ -249,11 +304,11 @@ const Header = ( props )=>{
 const Main = ( props )=>{
     return(
         <div className={'Main'}>
-            <TextBackground />
+            {/* <TextBackground /> */}
             {/* <GameMachine /> */}
-            <Advantage />
-            {/* <Course />
-            <QA /> */}
+            {/* <Advantage /> */}
+            <Course />
+            {/* <QA /> */}
         </div>
     );
 }
