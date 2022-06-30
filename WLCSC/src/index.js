@@ -7,9 +7,46 @@ import Sketch from 'react-p5';
 /*-- css ---*/
 import './index.css';
 
-const Button = (
-    <button className="button-top" >Button 49</button>
-);
+import LogoImage from './images/WLCSC_Logo.png';
+
+const ButtonStyle = {
+
+};
+const Button = ( props )=>{
+   return (
+        <button className="button-top" >{ props.text }</button>
+   );
+};
+
+const Logo = ()=>{
+    return (
+        <a className='Logo' href='/'>
+            <img src={LogoImage} alt='Logo'/>
+            <span> WLCSC </span>
+        </a>
+    );
+}
+
+const texts = ['about' , 'advantage' , 'course' , 'member' ];
+const Buttons = () => {
+    
+    return (
+        <nav className='Buttons'>
+            { texts.map( ele => <Button text={ ele } key={ ele } />)}
+        </nav>
+    );
+}
+
+const Change = ( props ) =>{
+    return (
+        <div className='Change'  >
+            <label className="switch">
+            <input type="checkbox" onClick={props.callback}/>
+            <span className="slider round"></span>
+            </label>
+        </div>
+    );
+}
 
 class TextBackground extends React.Component {
 	constructor( props){
@@ -127,50 +164,86 @@ class GameMachine extends React.Component {
 
 }
 
-const Header = ()=>{
-    return (
-        <header>
-            <div className='Header'>
-                {Logo}
-                {Buttons}
-                {Change}
-            </div>
-        </header>
-    );
-};
+class Header extends React.Component {
+    constructor( props ){
+        super( props );
 
-const Main = ()=>{
+    }
+
+    render(){
+        return (
+            <header>
+                <div className='Header' style={ {backgroundColor: ( this.props.theme===1 ? ThemeStyle.Dark.Header : ThemeStyle.Light.Header ) } }>
+                    <Logo/>
+                    <Buttons/>
+                    <Change callback={ this.props.callback }/>
+                </div>
+            </header>
+        ); 
+    }
+}
+const Main = ( props )=>{
     return(
         <div className='Main'>
-            <TextBackground />
-            <GameMachine />
+            {/* <TextBackground /> */}
+            {/* <GameMachine />
             <Advantage />
             <Course />
-            <QA />
+            <QA /> */}
         </div>
     );
 }
 
-const Footer = ()=>{
+const Footer = ( props )=>{
     return (
         <footer>
             <div className ='Footer'>
-                <Links />
-                <Copyright />
+                {/* <Links />
+                <Copyright /> */}
             </div>
         </footer>  
     );
 }
 
-const App = () => {
-    return (
-        <div className='App'>
-            <Header/>
-            <Main/>
-            <Footer/>
-        </div>
-    );
-};
+
+
+class App extends React.Component {
+    constructor ( props ){
+        super( props );
+        this.state = {
+            IsDark : 1,
+        };
+    }
+
+    handleTheme(){
+        console.log( "change" , this.state.IsDark );
+        if( this.state.IsDark===1 ){
+            this.setState( {IsDark : 0} );
+        }
+        else this.setState( {IsDark : 1} );
+    }
+
+    render(){
+
+        // console.log( "App" ,this.handleTheme() );
+        return (
+            <div className='App'>
+                <Header theme={ this.state.IsDark } callback={ ()=>this.handleTheme() }  />
+                <Main theme={ this.state.IsDark}/>
+                <Footer theme={ this.state.IsDark}/>
+            </div>
+        );
+    }
+}
+
+const ThemeStyle = {
+    Dark : {
+        Header : '#000',
+    },
+    Light :{
+        Header : '#fff',
+    }
+}
 
 
 const Root = ReactDOM.createRoot( document.getElementById( 'root' ) );
