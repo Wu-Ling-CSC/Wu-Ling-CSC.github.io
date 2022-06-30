@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom/client';
 // type animation 
 import TypeAnimation from 'react-type-animation';
@@ -14,6 +14,8 @@ import LogoImage from './images/WLCSC_Logo.png';
 
 const DARK = 'Dark ';
 const LIGHT = 'Light ';
+
+const typingSequence = ['WLCSC', 3000, 'Wu Ling',3000,'Computer Science',3000,'Algorithm',3000,'Cyber Security',3000,'Web Development',3000,''];
 
 const T = ( t )=> ( t===1? DARK:LIGHT);
 var flag=1;
@@ -55,41 +57,17 @@ const Change = ( props ) =>{
 }
 
 const Typing = ()=>{
-    // let obj = document.getElementsByClassName( 'Typing');
-    // const sz   = obj.clientHeight;
-
-    // let ref=useRef();
-
-    // console.log( ref );
     
     return (
         <TypeAnimation className='Typing'
             cursor={true}
-            sequence={['This text will be repeated infinitely.', 3000, 'aaaaa',3000,'']}
+            sequence={ typingSequence }
             wrapper="h2"
             repeat={Infinity}
        />
     );
 }
 
-// class Typing extends React.Component {
-
-//     constructor( props ){
-//         super( props );
-//         this.ref = useRef();
-//     }
-
-//     render(){
-//         return (
-//             <TypeAnimation className='Typing'
-//                 cursor={true}
-//                 sequence={['This text will be repeated infinitely.', 1000, '']}
-//                 wrapper="h2"
-//                 repeat={Infinity}
-//            />
-//         );
-//     }
-// }
 
 class TextBackground extends React.Component {
 	constructor( props){
@@ -265,7 +243,6 @@ class App extends React.Component {
 
     render(){
 
-        // console.log( "App" ,this.handleTheme() );
         return (
             <div className={ T(this.state.IsDark)+'App'}>
                 <Header callback={ ()=>this.handleTheme() }  />
@@ -279,10 +256,6 @@ class App extends React.Component {
 
 const Root = ReactDOM.createRoot( document.getElementById( 'root' ) );
 Root.render( <App/> );
-
-
-var obj = document.getElementsByClassName( 'Typing');
-console.log( obj , obj.clientHeight ,obj.length , obj.toString() );
 
 /*****************
     App :
