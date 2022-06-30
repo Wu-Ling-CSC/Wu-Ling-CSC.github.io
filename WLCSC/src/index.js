@@ -1,5 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+// type animation 
+// import TypeAnimation from 'react-type-animation';
 
 /*---- p5js with react ---*/
 import Sketch from 'react-p5';
@@ -14,6 +16,7 @@ const DARK = 'Dark ';
 const LIGHT = 'Light ';
 
 const T = ( t )=> ( t===1? DARK:LIGHT);
+var flag=1;
 
 const Button = ( props )=>{
    return (
@@ -51,6 +54,22 @@ const Change = ( props ) =>{
     );
 }
 
+// const Typing = ()=>{
+//     return (
+//         <TypeAnimation className='Typing'
+//             cursor={true}
+//             sequence={[
+//               'Pre-define width of wrapper',
+//               2000,
+//               'to prevent layout-shift.',
+//               2000,
+//             ]}
+//             wrapper="h2"
+//             repeat={Infinity}
+//            />
+//     );
+// }
+
 class TextBackground extends React.Component {
 	constructor( props){
 			super( props );
@@ -61,7 +80,7 @@ class TextBackground extends React.Component {
 	}
 
     setup = (p5, parentRef) => {
-        let W = p5.windowWidth-10 , H = p5.windowHeight-100;
+        let W = p5.windowWidth , H = p5.windowHeight-100;
         p5.createCanvas( W , H ).parent(parentRef);
         /* Background Part */
         this.R_size = p5.width / this.span + 1 ;
@@ -141,7 +160,7 @@ class TextBackground extends React.Component {
                         p5.push();
                                 p5.translate( shift , p5.height - shift );
                                 p5.rotate( -90 );
-                                p5.text( "Y : " + p5.mouseY+ (p5.noise(p5.frameCount/10)*10).toFixed(3) , 10 , -20 );
+                                p5.text( "Y : " + ((p5.mouseY+ (p5.noise(p5.frameCount/10)*10)).toFixed(3)) , 10 , -20 );
                         p5.pop();
 
                         p5.push();
@@ -157,7 +176,9 @@ class TextBackground extends React.Component {
     render() {
         return (
             <div className="TextBackground">
+                {/* <Typing/> */}
                 <Sketch setup={this.setup} draw={this.draw} />
+                
             </div>
         );
     }
@@ -182,7 +203,7 @@ const Header = ( props )=>{
 const Main = ( props )=>{
     return(
         <div className={'Main'}>
-            {/* <TextBackground /> */}
+            <TextBackground />
             {/* <GameMachine />
             <Advantage />
             <Course />
@@ -218,6 +239,7 @@ class App extends React.Component {
             this.setState( {IsDark : 0} );
         }
         else this.setState( {IsDark : 1} );
+        flag=!flag;
     }
 
     render(){
