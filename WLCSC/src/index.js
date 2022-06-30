@@ -9,8 +9,12 @@ import Sketch from 'react-p5';
 /*-- css ---*/
 import './index.css';
 
+/*-- Images --*/
 import LogoImage from './images/WLCSC_Logo.png';
-
+import ComputerImage from './images/computer.gif';
+import HackerImage from './images/hacker.gif';
+import SocialcareImage from './images/social-care.gif'
+import RocketImage from './images/rocket.gif';
 
 const DARK = 'Dark ';
 const LIGHT = 'Light ';
@@ -177,7 +181,6 @@ class TextBackground extends React.Component {
             <div className="TextBackground">
                 <Typing/>
                 <Sketch setup={this.setup} draw={this.draw} />
-                
             </div>
         );
     }
@@ -185,6 +188,50 @@ class TextBackground extends React.Component {
 
 class GameMachine extends React.Component {
 
+}
+
+
+const AdvantageList = [
+    { 
+        title:'Meet talented members',
+        icon:HackerImage,
+        subtitle:'qtqtqtqtqtsdgkgnregnqoirgnkabal blkb wegewgwegwegwegwgwegewg',
+    },
+    { 
+        title:'Start coding from senior high',
+        icon:RocketImage,
+        subtitle:'sdgknbaorn awiognwao waasfafafasfa wefwefwegwegweg fqfqefwegew',
+    },
+    { 
+        title:'Get experience from seniors',
+        icon:SocialcareImage,
+        subtitle:'wirnhwon knlkfnbsmngo; awoiethubndfkb aegegwegweg w wewegweg  g ewwe',
+    },
+    { 
+        title:'Good academic atmosphere',
+        icon:ComputerImage,
+        subtitle:'Learn computer science and all sorts of cool stuff with friends and seniors',
+    },
+];
+
+const AdvCard = (props)=>{
+    return (
+        <div className='AdvCard'>
+            <img src={props.ele.icon}  alt='icon'/>
+                <h2>{ props.ele.title }</h2>
+                <p>{ props.ele.subtitle }</p>
+        </div>
+    );
+}
+
+const Advantage = ()=>{
+
+    console.log( AdvantageList );
+    return (
+        <div className='Advantage'>
+            { AdvantageList.map( (ele)=> < AdvCard ele={ele} key={ele.icon}/> ) }
+        </div>
+    );
 }
 
 const Header = ( props )=>{
@@ -202,10 +249,10 @@ const Header = ( props )=>{
 const Main = ( props )=>{
     return(
         <div className={'Main'}>
-            <TextBackground />
-            {/* <GameMachine />
+            {/* <TextBackground /> */}
+            {/* <GameMachine /> */}
             <Advantage />
-            <Course />
+            {/* <Course />
             <QA /> */}
         </div>
     );
