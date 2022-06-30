@@ -238,3 +238,19 @@ input:checked + .slider:before {
 
 /*---- Main ----  */
 
+.Typing {
+  position: absolute;
+  top:30%;
+  left:50%;
+  transform: translateX(-50%);
+  font-size:xx-large;
+}
+
+.Dark .Typing {
+  color: #fff;
+}
+
+.Light .Typing{
+  color :rgb(252, 117, 33);
+}
+

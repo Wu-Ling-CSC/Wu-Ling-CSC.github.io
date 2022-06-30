@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import ReactDOM from 'react-dom/client';
 // type animation 
-// import TypeAnimation from 'react-type-animation';
+import TypeAnimation from 'react-type-animation';
 
 /*---- p5js with react ---*/
 import Sketch from 'react-p5';
@@ -54,20 +54,41 @@ const Change = ( props ) =>{
     );
 }
 
-// const Typing = ()=>{
-//     return (
-//         <TypeAnimation className='Typing'
-//             cursor={true}
-//             sequence={[
-//               'Pre-define width of wrapper',
-//               2000,
-//               'to prevent layout-shift.',
-//               2000,
-//             ]}
-//             wrapper="h2"
-//             repeat={Infinity}
+const Typing = ()=>{
+    // let obj = document.getElementsByClassName( 'Typing');
+    // const sz   = obj.clientHeight;
+
+    // let ref=useRef();
+
+    // console.log( ref );
+    
+    return (
+        <TypeAnimation className='Typing'
+            cursor={true}
+            sequence={['This text will be repeated infinitely.', 3000, 'aaaaa',3000,'']}
+            wrapper="h2"
+            repeat={Infinity}
+       />
+    );
+}
+
+// class Typing extends React.Component {
+
+//     constructor( props ){
+//         super( props );
+//         this.ref = useRef();
+//     }
+
+//     render(){
+//         return (
+//             <TypeAnimation className='Typing'
+//                 cursor={true}
+//                 sequence={['This text will be repeated infinitely.', 1000, '']}
+//                 wrapper="h2"
+//                 repeat={Infinity}
 //            />
-//     );
+//         );
+//     }
 // }
 
 class TextBackground extends React.Component {
@@ -176,7 +197,7 @@ class TextBackground extends React.Component {
     render() {
         return (
             <div className="TextBackground">
-                {/* <Typing/> */}
+                <Typing/>
                 <Sketch setup={this.setup} draw={this.draw} />
                 
             </div>
@@ -258,6 +279,10 @@ class App extends React.Component {
 
 const Root = ReactDOM.createRoot( document.getElementById( 'root' ) );
 Root.render( <App/> );
+
+
+var obj = document.getElementsByClassName( 'Typing');
+console.log( obj , obj.clientHeight ,obj.length , obj.toString() );
 
 /*****************
     App :
