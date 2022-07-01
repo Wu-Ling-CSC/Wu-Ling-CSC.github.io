@@ -302,8 +302,8 @@ class LinkedListBackground extends React.Component {
     }
     render(){
         return (
-            <div className="TextBackground">
-                <h1>See all members</h1>
+            <div className="LinkedListBackground">
+                <a href='/members'><h1>See all club members</h1></a>
                 <Sketch setup={this.setup} draw={this.draw} />
             </div>
         );
@@ -340,7 +340,7 @@ const About = ()=>{
                 { IntroImages.map( (ele,idx)=>{
                     return (
                         <div className={'ImgBox i'+idx} key={ele.url} >
-                            <img src={ele.url} />
+                            <img src={ele.url} alt='des'/>
                             <span className='TxtImg'>{ele.txt}</span>
                         </div>
                     );
@@ -463,11 +463,12 @@ const Header = ( props )=>{
 const Main = ( props )=>{
     return(
         <div className={'Main'}>
-            {/* <TextBackground /> */}
+            <TextBackground />
             {/* <GameMachine /> */}
-            {/* < About /> */}
-            {/* <Advantage /> */}
-            {/* <Course /> */}
+            < About />
+            <Advantage />
+            <Course />
+            <LinkedListBackground/>
             {/* <QA /> */}
         </div>
     );
@@ -547,7 +548,6 @@ class App extends React.Component {
             <div className={ T(this.state.IsDark)+'App'}>
                 <Header callback={ ()=>this.handleTheme() }  />
                 <Main/>
-                <LinkedListBackground/>
                 <Footer/>
             </div>
         );
