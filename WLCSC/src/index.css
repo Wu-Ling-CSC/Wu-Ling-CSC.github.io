@@ -323,25 +323,60 @@ input:checked + .slider:before {
   box-shadow: rgba(240, 133, 46, 0.4) 5px 5px, rgba(240, 133, 46, 0.3) 10px 10px, rgba(2240, 133, 46, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
 }
 
-/* .Course {
-  
-} */
+.Course {
+  text-align: center;
+}
+
+.Dark .Course{
+  background-color: #000;
+  color: #fff;
+}
+
+.Light .Course{
+  background-color: #fff;
+  color: #000;
+}
 
 .CourseCard {
   display: flex;
-}
-
-.CourseCard .ImgBox{
-  width: 50px;
-}
-
-.ImgBox img{
-  width: 50px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .flipped{
   direction: rtl;
 }
+
+.CourseCard .Text{
+  width: 30%;
+  margin-left: 15%;
+
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+}
+
+.flipped .Text{
+  margin-right: 15%;
+  margin-left: 0;
+}
+
+.CourseCard .ImgBox{
+  width: 50px;
+  margin-left: 20%;
+}
+
+.flipped .ImgBox{
+  margin-right: 20%;
+  margin-left: 0;
+}
+
+.ImgBox img{
+  height: 100px;
+  border-radius: 10px;
+}
+
+
 
 
 
