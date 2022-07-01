@@ -436,5 +436,5 @@ input:checked + .slider:before {
 }
 
 .Light .social a{
-  color: #fff;
+  /* color: #f66f00; */
 }
