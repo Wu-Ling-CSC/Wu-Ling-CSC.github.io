@@ -16,6 +16,12 @@ import HackerImage from './images/hacker.gif';
 import SocialcareImage from './images/social-care.gif'
 import RocketImage from './images/rocket.gif';
 
+import AlgoImage from './images/algorithm.png';
+import AIImage from './images/artificial-intelligence.png';
+import WebdevImage from './images/data.png';
+import CyberImage from './images/encrypted.png';
+import LinuxImage from './images/linux.png';
+
 const DARK = 'Dark ';
 const LIGHT = 'Light ';
 
@@ -240,27 +246,27 @@ const Advantage = ()=>{
 const CourseList = [
     { 
         title:'Algorithm',
-        icon:HackerImage,
+        icon:AlgoImage,
         subtitle:'qtqtqtqtqtsdgkgnregnqoirgnkabal blkb wegewgwegwegwegwgwegewg',
     },
     { 
         title:'Web Devlopment',
-        icon:RocketImage,
+        icon:WebdevImage,
         subtitle:'sdgknbaorn awiognwao waasfafafasfa wefwefwegwegweg fqfqefwegew',
     },
     { 
         title:'Cyber Security',
-        icon:SocialcareImage,
+        icon:CyberImage,
         subtitle:'wirnhwon knlkfnbsmngo; awoiethubndfkb aegegwegweg w wewegweg  g ewwe',
     },
     { 
         title:'Mechine Learing',
-        icon:ComputerImage,
+        icon:AIImage,
         subtitle:'Learn computer science and all sorts of cool stuff with friends and seniors',
     },
     { 
         title:'Linux',
-        icon:ComputerImage,
+        icon:LinuxImage,
         subtitle:'Learn computer science and all sorts of cool stuff with friends and seniors',
     },
 ];
@@ -304,9 +310,9 @@ const Header = ( props )=>{
 const Main = ( props )=>{
     return(
         <div className={'Main'}>
-            {/* <TextBackground /> */}
+            <TextBackground />
             {/* <GameMachine /> */}
-            {/* <Advantage /> */}
+            <Advantage />
             <Course />
             {/* <QA /> */}
         </div>
