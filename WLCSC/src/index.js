@@ -331,23 +331,30 @@ const Main = ( props )=>{
     );
 }
 
-const LinksList = [
+const SocialLinksList = [
     {
-        icon:124,
-        link:124,
-
-    }
+        icon:'fa-envelope',
+        link: 'wlcsc1995@gmail.com',
+    },
+    {
+        icon:'fa-github',
+        link: 'https://github.com/orgs/Wu-Ling-CSC',
+    },
+    {
+        icon:'fa-instagram',
+        link:'https://www.instagram.com/wlcsc_27/',
+    },
+    {
+        icon:'fa-facebook',
+        link:'https://www.facebook.com/WLCSC/',
+    },
 ]; 
 
-const Links = ()=>{
+const SocialLinks = ()=>{
     return (
         <div className='Links' >
-            {/* <FontAwesomeIcon icon="fa-brands fa-github" /> */}
             <ul className="social">
-                <li><a href="https://twitter.com/aaroncuddeback" ><i className="fa fa-envelope"></i></a></li>
-                <li><a href="https://github.com/gymrat" ><i className="fa fa-github"></i></a></li>
-                <li><a href="https://facebook.com/gymratpacks" ><i className="fa fa-instagram"></i></a></li>
-                <li><a href="https://facebook.com/gymratpacks" ><i className="fa fa-facebook"></i></a></li>
+                { SocialLinksList.map( (ele)=> <li key={ele.icon}><a href={ele.link}><i className={'fa '+ele.icon}></i></a></li> ) }
             </ul>
         </div>
     );
@@ -357,7 +364,7 @@ const Footer = ( props )=>{
     return (
         <footer>
             <div className={'Footer'}>
-                <Links />
+                <SocialLinks />
                 {/* <Copyright /> */}
             </div>
         </footer>  
