@@ -22,6 +22,10 @@ import WebdevImage from './images/data.png';
 import CyberImage from './images/encrypted.png';
 import LinuxImage from './images/linux.png';
 
+import LocationImage from './images/Location.png'
+import GroupImage from './images/Group.jpg'
+import BackImage from './images/Back.jpg' 
+
 /* awsomw icon*/
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
@@ -199,11 +203,38 @@ class GameMachine extends React.Component {
 
 }
 
+const IntroImages = [
+    {
+        url:GroupImage,
+        txt:'eetwe ehrhw ewe grhre hwre wgwgw ',
+    },
+    {
+        url:BackImage,
+        txt:'eetwe ehrhw ewe grhre hwre wgwgw ',
+    },
+    {
+        url:LocationImage,
+        txt:'eetwe ehrhw ewe grhre hwre wgwgw ',
+    },
+]
+
 const About = ()=>{
     return (
         <div className='About'>
-            <h1>About us ?</h1>
-            { CourseList.map( (ele , idx )=><CourseCard ele={ele} ith={ idx } key={ele.title}/>) }
+            <div className='Text'>
+                <h1>About us </h1>
+                <p>wetwet wegwe wegwe weewg wegweg wgew hrg wgwg wegewg wegweg wegewgew </p>
+            </div>
+            <div className='ImgContainer'>
+                { IntroImages.map( (ele,idx)=>{
+                    return (
+                        <div className={'ImgBox i'+idx} key={ele.url} >
+                            <img src={ele.url} />
+                            <span className='TxtImg'>{ele.txt}</span>
+                        </div>
+                    );
+                })}
+            </div>
         </div>
     );
 }
@@ -321,11 +352,11 @@ const Header = ( props )=>{
 const Main = ( props )=>{
     return(
         <div className={'Main'}>
-            {/* <TextBackground /> */}
+            <TextBackground />
             {/* <GameMachine /> */}
-            {/* < About /> */}
-            {/* <Advantage /> */}
-            {/* <Course /> */}
+            < About />
+            <Advantage />
+            <Course />
             {/* <QA /> */}
         </div>
     );
