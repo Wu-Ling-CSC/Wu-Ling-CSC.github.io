@@ -398,7 +398,43 @@ input:checked + .slider:before {
   border-radius: 10px;
 }
 
+.Footer{
+  padding: 30px;
+}
 
+.Dark .Footer{
+  background-color: #000;
+  color: #fff;
+}
 
+.Light .Footer{
+  background-color: #fff;
+}
 
+.social{
+  text-align: center;
+}
 
+.social li {
+  display: inline;
+  padding: 20px;
+
+  transition: .5s;
+  opacity: 0.7;
+}
+
+.social li:hover{
+  opacity: 1;
+}
+
+.fa{
+  font-size: 25px;
+}
+
+.Dark .social a{
+  color: #fff;
+}
+
+.Light .social a{
+  color: #fff;
+}

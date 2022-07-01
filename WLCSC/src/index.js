@@ -22,6 +22,9 @@ import WebdevImage from './images/data.png';
 import CyberImage from './images/encrypted.png';
 import LinuxImage from './images/linux.png';
 
+/* awsomw icon*/
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 const DARK = 'Dark ';
 const LIGHT = 'Light ';
 
@@ -196,6 +199,14 @@ class GameMachine extends React.Component {
 
 }
 
+const About = ()=>{
+    return (
+        <div className='About'>
+            <h1>About us ?</h1>
+            { CourseList.map( (ele , idx )=><CourseCard ele={ele} ith={ idx } key={ele.title}/>) }
+        </div>
+    );
+}
 
 const AdvantageList = [
     { 
@@ -312,19 +323,42 @@ const Main = ( props )=>{
         <div className={'Main'}>
             <TextBackground />
             {/* <GameMachine /> */}
-            <Advantage />
-            <Course />
+            {/* < About /> */}
+            {/* <Advantage /> */}
+            {/* <Course /> */}
             {/* <QA /> */}
         </div>
     );
 }
 
+const LinksList = [
+    {
+        icon:124,
+        link:124,
+
+    }
+]; 
+
+const Links = ()=>{
+    return (
+        <div className='Links' >
+            {/* <FontAwesomeIcon icon="fa-brands fa-github" /> */}
+            <ul className="social">
+                <li><a href="https://twitter.com/aaroncuddeback" ><i className="fa fa-envelope"></i></a></li>
+                <li><a href="https://github.com/gymrat" ><i className="fa fa-github"></i></a></li>
+                <li><a href="https://facebook.com/gymratpacks" ><i className="fa fa-instagram"></i></a></li>
+                <li><a href="https://facebook.com/gymratpacks" ><i className="fa fa-facebook"></i></a></li>
+            </ul>
+        </div>
+    );
+};
+
 const Footer = ( props )=>{
     return (
         <footer>
             <div className={'Footer'}>
-                {/* <Links />
-                <Copyright /> */}
+                <Links />
+                {/* <Copyright /> */}
             </div>
         </footer>  
     );
