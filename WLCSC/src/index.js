@@ -321,7 +321,7 @@ const Header = ( props )=>{
 const Main = ( props )=>{
     return(
         <div className={'Main'}>
-            <TextBackground />
+            {/* <TextBackground /> */}
             {/* <GameMachine /> */}
             {/* < About /> */}
             {/* <Advantage /> */}
@@ -369,7 +369,7 @@ const Copyright = ()=>{
     );
 }
 
-const Footer = ( props )=>{
+const Footer = ( )=>{
     return (
         <footer>
             <div className={'Footer'}>
