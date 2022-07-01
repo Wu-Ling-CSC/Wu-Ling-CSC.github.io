@@ -438,3 +438,13 @@ input:checked + .slider:before {
 .Light .social a{
   /* color: #f66f00; */
 }
+
+.Copyright{
+  margin-top: 30px;
+  text-align: center;
+  font-size: 11px;
+}
+
+.Copyright span{
+  font-weight: 500;
+}

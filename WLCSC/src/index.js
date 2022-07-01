@@ -360,12 +360,21 @@ const SocialLinks = ()=>{
     );
 };
 
+const Copyright = ()=>{
+    let currentYear =  new Date().getFullYear();
+    return (
+        <div className='Copyright'>
+            <p>Copyright © {currentYear} <span>WLCSC</span> All rights reserved</p>
+        </div>
+    );
+}
+
 const Footer = ( props )=>{
     return (
         <footer>
             <div className={'Footer'}>
                 <SocialLinks />
-                {/* <Copyright /> */}
+                <Copyright />
             </div>
         </footer>  
     );
