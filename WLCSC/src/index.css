@@ -13,11 +13,13 @@
 
 .Light .Header{
   background-color: #fff;
-  border-bottom: solid 2px rgb(135, 135, 135);
+  /* margin-bottom: 100px;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px; */
 }
 .Dark .Header{
   background-color: #000;
-  border-bottom: solid 2px rgb(0, 0, 0);
+  /* box-shadow: rgba(255, 255, 255, 0.07) 0px 1px 2px, rgba(255, 255, 255, 0.07) 0px 2px 4px, rgba(255, 255, 255, 0.07) 0px 2px 4px, rgba(255, 255, 255, 0.07) 0px 8px 16px, rgba(255, 255, 255, 0.07) 0px 8px 16px, rgba(255, 255, 255, 0.07) 0px 16px 32px; */
+
 }
 
 
@@ -453,6 +455,9 @@ input:checked + .slider:before {
 
 .About {
   display: flex;
+  height: 500px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .Light .About{
@@ -469,25 +474,44 @@ input:checked + .slider:before {
   text-align: center;
   width: 20%;
   padding: 10%;
+  padding-top: 150px;
   /* padding: 50px; */
 }
 
 .About .ImgContainer{
-  width: 40%;
+  width: 50%;
+  height: 350px;
   padding-left: 5%;
-  padding-top: 5%;
+  padding-right: 5%;
+  padding-top: 100px;
   padding-bottom: 50px;
+  position: absolute;
+  left: 40%;
 
   font-size:small;
 }
 
 .About .ImgBox{
+  background-color: #fff;
   position: absolute;
+  transition: 1s;
+  border-radius: 10px;
+}
+
+.About .ImgBox:hover{
+  transform: scale(1.2);
+}
+
+.Light .About .ImgBox{
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.Dark .About .ImgBox{
+  box-shadow: rgb(253, 215, 182) 0px 20px 30px -10px;
 }
 
 .About img{
   border-radius: 10px;
-  border: solid #fff;
 }
 .About .ImgBox span {
   position: absolute;
@@ -496,6 +520,8 @@ input:checked + .slider:before {
 
 .About .i0{
   z-index: 10;
+  left:-20px;
+  top: -40px;
 }
 .About .i0 span{
   left: 7px;
@@ -506,6 +532,7 @@ input:checked + .slider:before {
 
 .About .i1{
   z-index: 5;
+  top:120px;
 }
 .About .i1 span{
   left: 7px;
@@ -516,13 +543,14 @@ input:checked + .slider:before {
 
 
 .About .i2{
-  z-index: 1;
+  top:10px;
+  right:150px;
 }
 .About .i2 span{
   left: 7px;
 }
 .About .i2 img{
-  width: 100px;
+  width: 150px;
 }
 /* .About .ImgContainer{
   display: flex;
