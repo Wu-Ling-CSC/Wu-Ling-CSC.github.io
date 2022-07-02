@@ -857,11 +857,23 @@ input:focus + .slider {
   text-align: center;
   position: absolute;
   color: #fff;
-  transform: translateX(-50%) translateY(350%);
   left: 50%;
   transition: 0.5s;
+
+  width: 310px;
 }
 
 .LinkedListBackground h1:hover{
   transform: translateX(-52%) translateY(330%);
+}
+
+@media all and (min-width:650px){
+  .LinkedListBackground h1{
+    transform: translateX(-50%) translateY(350%);
+  }
+}
+@media all and (max-width:649px){
+  .LinkedListBackground h1{
+    transform: translateX(-50%) translateY(150%);
+  }
 }
