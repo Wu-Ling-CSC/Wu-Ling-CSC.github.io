@@ -54,10 +54,21 @@ html{
   transform: rotate(270deg);
 }
 
-.Buttons{
+/* .Buttons{
   display:inline-block;
-}
+} */
 
+@media all and (min-width: 800px) {
+  .Buttons{
+    display:inline-block;
+  }
+}
+/* pad */
+@media all and (max-width: 799px) {
+  .Buttons{
+    display: none;
+  }
+}
 .Buttons a{
   text-decoration: none;
 }
@@ -188,11 +199,41 @@ html{
   display:inline-block;
 }
 
+@media all and (min-width: 800px) {
+  .Change{
+    top:15px;
+  }
+}
+/* pad */
+@media all and (max-width: 799px) {
+  .Change{
+    top:20px;
+  }
+}
+
 .switch {
   position: relative;
   display: inline-block;
   width: 55px;
   height: 30px;
+}
+
+@media all and (min-width: 800px) {
+  .switch{
+    width: 55px;
+    height: 30px;
+  }
+}
+/* pad */
+@media all and (max-width: 799px) {
+  .switch{
+    width: 35px;
+    height: 20px;
+  }
+}
+
+.Buttons a{
+  text-decoration: none;
 }
 
 /* Hide default HTML checkbox */
@@ -218,13 +259,25 @@ html{
 .slider:before {
   position: absolute;
   content: "";
-  height: 23px;
-  width: 23px;
   left: 4px;
   bottom: 4px;
   background-color: white;
   -webkit-transition: .4s;
   transition: .4s;
+}
+
+@media all and (min-width: 800px) {
+  .slider:before{
+    height: 23px;
+    width: 23px;
+  }
+}
+/* pad */
+@media all and (max-width: 799px) {
+  .slider:before{
+    height: 12px;
+    width: 12px;
+  }
 }
 
 .Dark .slider:before{
@@ -243,10 +296,22 @@ input:focus + .slider {
   box-shadow: 0 0 1px #6a6969;
 }
 
-input:checked + .slider:before {
-  -webkit-transform: translateX(25px);
-  -ms-transform: translateX(25px);
-  transform: translateX(25px);
+
+
+@media all and (min-width: 800px) {
+  input:checked + .slider:before {
+    -webkit-transform: translateX(25px);
+    -ms-transform: translateX(25px);
+    transform: translateX(25px);
+  }
+}
+/* pad */
+@media all and (max-width: 799px) {
+  input:checked + .slider:before {
+    -webkit-transform: translateX(15px);
+    -ms-transform: translateX(15px);
+    transform: translateX(15px);
+  }
 }
 
 /* Rounded sliders */
@@ -270,6 +335,31 @@ input:checked + .slider:before {
   left:50%;
   transform: translateX(-50%);
   font-size: 50px;
+}
+
+/* desktop */
+@media all and (min-width: 1000px) {
+  .Typing{
+    font-size: 50px;
+  }
+}
+/* pad */
+@media all and (min-width: 760px) and (max-width: 999px) {
+  .Typing{
+    font-size: 45px;
+  }
+}
+/* mini pad */
+@media all and (min-width: 500px) and (max-width: 759px) {
+  .Typing{
+    font-size: 35px;
+  }
+}
+/* mobile */
+@media all and (max-width: 499px) {
+  .Typing{
+    font-size: 30px;
+  }
 }
 
 .Dark .Typing {
@@ -503,6 +593,9 @@ input:checked + .slider:before {
   position: absolute;
   left: 40%;
 
+
+  overflow: hidden;
+
   font-size:small;
 }
 
@@ -559,7 +652,7 @@ input:checked + .slider:before {
 
 .About .i2{
   top:10px;
-  right:150px;
+  left:60%;
 }
 .About .i2 span{
   left: 7px;
