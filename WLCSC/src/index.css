@@ -455,6 +455,58 @@ input:focus + .slider {
   border-radius: 10px;
 }
 
+@media all and (min-width:600px){
+  .CourseCard .Text{
+    
+    width: 30%;
+    margin-left: 15%;
+  }
+
+  .flipped .Text{
+    margin-right: 15%;
+    margin-left: 0;
+  }
+
+  .CourseCard .ImgBox{
+    width: 50px;
+    margin-left: 20%;
+  }
+  
+  .flipped .ImgBox{
+    margin-right: 20%;
+    margin-left: 0;
+  }
+
+  .Course .ImgBox img{
+    height: 100px;
+  }
+}
+@media all and (max-width:599px){
+  .CourseCard .Text{   
+    width: 50%;
+    margin-left: 3%;
+  }
+
+  .flipped .Text{
+    margin-right: 3%;
+    margin-left: 0;
+  }
+
+  .CourseCard .ImgBox{
+    width: 50px;
+    margin-left: 10%;
+  }
+  
+  .flipped .ImgBox{
+    margin-right: 10%;
+    margin-left: 0;
+  }
+
+  .Course .ImgBox img{
+    height: 80px;
+  }
+}
+
 .Light .CourseCard {
   
   box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
@@ -476,32 +528,15 @@ input:focus + .slider {
 }
 
 .CourseCard .Text{
-  width: 30%;
-  margin-left: 15%;
 
   overflow-wrap: break-word;
   word-wrap: break-word;
   hyphens: auto;
 }
 
-.flipped .Text{
-  margin-right: 15%;
-  margin-left: 0;
-}
-
-.CourseCard .ImgBox{
-  width: 50px;
-  margin-left: 20%;
-}
-
-.flipped .ImgBox{
-  margin-right: 20%;
-  margin-left: 0;
-}
-
 .Course .ImgBox img{
   background-color: #fff;
-  height: 100px;
+  /* height: 100px; */
   border-radius: 10px;
 }
 
