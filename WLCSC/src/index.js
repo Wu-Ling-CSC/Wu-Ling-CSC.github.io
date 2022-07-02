@@ -39,20 +39,20 @@ var flag=1;
 
 const Button = ( props )=>{
    return (
-        <button className={"button-top"} >{ props.text }</button>
+        <div className={"button-top"} ><a href={ '#'+props.text }>{ props.text }</a></div>
    );
 };
 
 const Logo = ()=>{
     return (
-        <a className='Logo' href='/'>
+        <a className='Logo' href='#Start'>
             <img src={LogoImage} alt='Logo'/>
             <span> WLCSC </span>
         </a>
     );
 }
 
-const texts = ['about' , 'advantage' , 'course' , 'member' ];
+const texts = ['About' , 'Advantage' , 'Course' , 'Members' ];
 const Buttons = () => {
     
     return (
@@ -189,7 +189,7 @@ class TextBackground extends React.Component {
 
     render() {
         return (
-            <div className="TextBackground">
+            <div className="TextBackground" id='Start'>
                 <Typing/>
                 <Sketch setup={this.setup} draw={this.draw} />
             </div>
@@ -302,7 +302,7 @@ class LinkedListBackground extends React.Component {
     }
     render(){
         return (
-            <div className="LinkedListBackground">
+            <div className="LinkedListBackground" id='Members'>
                 <a href='/members'><h1>See all club members</h1></a>
                 <Sketch setup={this.setup} draw={this.draw} />
             </div>
@@ -331,7 +331,7 @@ const IntroImages = [
 
 const About = ()=>{
     return (
-        <div className='About'>
+        <div className='About' id='About'>
             <div className='Text'>
                 <h1>About us </h1>
                 <p>wetwet wegwe wegwe weewg wegweg wgew hrg wgwg wegewg wegweg wegewgew </p>
@@ -389,7 +389,7 @@ const Advantage = ()=>{
 
     // console.log( AdvantageList );
     return (
-        <div className='Advantage'>
+        <div className='Advantage' id='Advantage'>
             <h1>Advantages ?</h1>
             { AdvantageList.map( (ele)=> < AdvCard ele={ele} key={ele.icon}/> ) }
         </div>
@@ -439,9 +439,9 @@ const CourseCard= (props)=>{
         </div>
     );
 }
-const Course = ()=>{
+const Course= ()=>{
     return (
-        <div className='Course'>
+        <div className='Course' id='Course'>
             <h1>Courses ?</h1>
             { CourseList.map( (ele , idx )=><CourseCard ele={ele} ith={ idx } key={ele.title}/>) }
         </div>
@@ -468,7 +468,7 @@ const Main = ( props )=>{
             < About />
             <Advantage />
             <Course />
-            <LinkedListBackground/>
+            <LinkedListBackground />
             {/* <QA /> */}
         </div>
     );
