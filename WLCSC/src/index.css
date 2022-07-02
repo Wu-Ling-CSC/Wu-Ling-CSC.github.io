@@ -734,7 +734,7 @@ input:focus + .slider {
 
   .About .i0{
     z-index: 10;
-    left:10%;
+    right:55%;
     top: 0px;
   }
   .About .i0 span{
@@ -746,10 +746,7 @@ input:focus + .slider {
   
   .About .i1{
     z-index: 5;
-    /* left:20%; */
-
-    left:50%;
-    transform: translateX(-50%);
+    right:18%;
     top:80px;
   }
   .About .i1 span{
@@ -760,7 +757,7 @@ input:focus + .slider {
   }
   .About .i2{
     top:30px;
-    left:70%;
+    left:73%;
   }
   .About .i2 span{
     left: 7px;
