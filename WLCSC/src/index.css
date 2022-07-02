@@ -328,6 +328,17 @@ input:focus + .slider {
 
 /*---- Main ----  */
 
+@media all and (min-width:800px){
+  .TextBackground{
+    padding-top: 62px;
+  }
+}
+@media all and (max-width:799px){
+  .TextBackground{
+    padding-top: 54px;
+  }
+}
+
 /* Typing */
 .Typing {
   position: absolute;

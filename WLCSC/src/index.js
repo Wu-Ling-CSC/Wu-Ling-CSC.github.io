@@ -85,13 +85,12 @@ const Typing = ()=>{
     );
 }
 
-
 class TextBackground extends React.Component {
 	constructor( props){
 			super( props );
 			this.R_size = 0;
 			this.C_size = 0;
-			this.span = 100 ;
+			this.span = 80 ;
 			this.dot_R = 10;		
 	}
 
@@ -139,7 +138,7 @@ class TextBackground extends React.Component {
                                                 p5.rotate(45);
                                                 p5.noFill();
                 
-                                                p5.stroke( 90 );
+                                                p5.stroke( 150 );
                                                 let cur_sz =  this.dot_R+ p5.abs( 2*this.dot_R* p5.sin(p5.frameCount) );
                                                 p5.rect( -cur_sz/2, -cur_sz/2 , cur_sz , cur_sz );
         
@@ -164,7 +163,7 @@ class TextBackground extends React.Component {
                 p5.textStyle( p5.BOLD)
                 p5.push();
                         
-                        let shift = 80 ;
+                        let shift = (window.innerWidth>600 ? 60:40) ;
                         p5.text( "X : " + p5.mouseX+ (p5.noise(p5.frameCount/10)*10).toFixed(3) , shift , p5.height - shift+33 );
 
                         p5.push();
