@@ -559,11 +559,37 @@ input:focus + .slider {
 
 
 .About {
-  display: flex;
   height: 500px;
   padding-top: 100px;
-  padding-bottom: 30px;
 }
+
+@media all and (min-width: 800px) {
+  .About{
+    display: flex;
+    padding-bottom: 30px;
+  }
+  .About .Text{
+    width: 20%;
+  }
+  .About .ImgContainer{
+    width: 50%;
+    left: 40%;
+    padding-bottom: 50px;
+  }
+}
+/* pad */
+@media all and (max-width: 799px) {
+  .About .Text{
+    width: 80%;
+  }
+  .About .ImgContainer{
+    width: 80%;
+    left:10%;
+    height: 700px;
+    padding-bottom: 100px;
+  }
+}
+
 
 .Light .About{
   background-color: #fff;
@@ -577,22 +603,17 @@ input:focus + .slider {
 
 .About .Text {
   text-align: center;
-  width: 20%;
   padding: 10%;
   padding-top: 150px;
   /* padding: 50px; */
 }
 
 .About .ImgContainer{
-  width: 50%;
   height: 350px;
   padding-left: 5%;
   padding-right: 5%;
   padding-top: 100px;
-  padding-bottom: 50px;
   position: absolute;
-  left: 40%;
-
 
   overflow: hidden;
 
@@ -625,6 +646,15 @@ input:focus + .slider {
   position: absolute;
   bottom: 10px;
 }
+
+@media all and (min-width: 800px) {
+  
+}
+/* pad */
+@media all and (min-width: 300px)and (max-width: 550px) {
+  
+}
+
 
 .About .i0{
   z-index: 10;
