@@ -274,13 +274,25 @@ html{
 @media all and (min-width: 800px) {
   .Change{
     top:15px;
+    right: 60px;
+  }
+  .Language{
+    right: 20px;
+    top: 14px;
+  }
+  .Language i{
+    font-size: 30px;
   }
 }
 /* pad */
 @media all and (max-width: 799px) {
   .Change{
     top:20px;
-    right: 50px;
+    right: 70px;
+  }
+  .Language{
+    right: 40px;
+    top: 17px;
   }
 }
 
@@ -963,4 +975,15 @@ input:focus + .slider {
   .LinkedListBackground h1{
     transform: translateX(-50%) translateY(150%);
   }
+}
+
+.Language{
+  z-index: 25;
+  position: fixed;
+}
+.Dark .Language{
+  color: #fff;
+}
+.Light .Language{
+  color:#585756;
 }
