@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ReactDOM from 'react-dom/client';
 // type animation 
 import TypeAnimation from 'react-type-animation';
@@ -69,6 +69,22 @@ const Change = ( props ) =>{
             <input type="checkbox" onClick={props.callback}/>
             <span className="slider round"></span>
             </label>
+        </div>
+    );
+}
+
+
+const SideBar = () =>{
+    var [ IsActive , toggle ] = useState(true);
+    return (
+        <div className={'SideBar '+(IsActive ? 'active':'') }>
+
+            { texts.map( ele=> <div className={"mobile-nav"} ><a href={ '#'+ele }>{ ele }</a></div>) }
+            <div className='SideBar icon' onClick={()=>{ 
+                console.log( 'click\n'  ,IsActive );
+                toggle(IsActive=!IsActive); } }>
+                <i className="fa fa-bars" ></i>
+            </div>
         </div>
     );
 }
@@ -546,6 +562,7 @@ class App extends React.Component {
         return (
             <div className={ T(this.state.IsDark)+'App'}>
                 <Header callback={ ()=>this.handleTheme() }  />
+                <SideBar/>
                 <Main/>
                 <Footer/>
             </div>
