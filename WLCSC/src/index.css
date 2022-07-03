@@ -501,7 +501,12 @@ input:focus + .slider {
   text-align: center;
   margin-top: 50px;
   margin-bottom: 10px;
-  margin-left: 53px ;
+  margin-left: 25px ;
+  margin-right: 25px ;
+}
+.AdvCard p{
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .AdvCard img{
@@ -962,18 +967,22 @@ input:focus + .slider {
   width: 310px;
 }
 
-.LinkedListBackground h1:hover{
-  transform: translateX(-52%) translateY(330%);
-}
+
 
 @media all and (min-width:650px){
   .LinkedListBackground h1{
     transform: translateX(-50%) translateY(350%);
   }
+  .LinkedListBackground h1:hover{
+    transform: translateX(-52%) translateY(330%);
+  }
 }
 @media all and (max-width:649px){
   .LinkedListBackground h1{
     transform: translateX(-50%) translateY(150%);
+  }
+  .LinkedListBackground h1:hover{
+    transform: translateX(-52%) translateY(180%);
   }
 }
 
