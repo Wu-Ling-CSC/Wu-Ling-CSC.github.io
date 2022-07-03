@@ -169,7 +169,7 @@ const content = [
                     subtitle:'不保證能學會毒瘤資料結構和神奇的演算法，但是保證能讓你學到程競中的電神裝弱文化',
                 },
                 { 
-                    title:'前端網頁開發',
+                    title:'網頁開發',
                     icon:WebdevImage,
                     subtitle:'手把手教你用 HTML CSS Javascript 刻出你現在看到的網站',
                 },
