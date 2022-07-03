@@ -44,55 +44,75 @@ const content = [
             title:'About us',
             subtitle:'A group of student love computer science , coding and sharing experience in Wuling senior high school.',
         },
-        advantage:[
-            { 
-                title:'Meet talented members',
-                icon:HackerImage,
-                subtitle:'qtqtqtqtqtsdgkgnregnqoirgnkabal blkb wegewgwegwegwegwgwegewg',
+        IntroImages:[
+            {
+                url:GroupImage,
+                txt:'discuss obstacle with senior clubmates',
             },
-            { 
-                title:'Start coding from senior high',
-                icon:RocketImage,
-                subtitle:'sdgknbaorn awiognwao waasfafafasfa wefwefwegwegweg fqfqefwegew',
+            {
+                url:BackImage,
+                txt:'equipped RTX™ 2080 Ti on every computer',
             },
-            { 
-                title:'Get experience from seniors',
-                icon:SocialcareImage,
-                subtitle:'wirnhwon knlkfnbsmngo; awoiethubndfkb aegegwegweg w wewegweg  g ewwe',
-            },
-            { 
-                title:'Good academic atmosphere',
-                icon:ComputerImage,
-                subtitle:'Learn computer science and all sorts of cool stuff with friends and seniors',
+            {
+                url:LocationImage,
+                txt:'www',
             },
         ],
-        course:[
-            { 
-                title:'Algorithm',
-                icon:AlgoImage,
-                subtitle:'From C++ syntax to data structures and algorithm , learn competitive programming through online judges problems and contests.',
-            },
-            { 
-                title:'Web Devlopment',
-                icon:WebdevImage,
-                subtitle:'Learn Web Application Exploitation by solving CTF and look into common web attacks .',
-            },
-            { 
-                title:'Cyber Security',
-                icon:CyberImage,
-                subtitle:'wirnhwon knlkfnbsmngo; awoiethubndfkb aegegwegweg w wewegweg  g ewwe',
-            },
-            { 
-                title:'Mechine Learing',
-                icon:AIImage,
-                subtitle:'The most trend tech nowadays , learn AI stack from Keras , PyTorch to Tensenflow.',
-            },
-            { 
-                title:'Linux',
-                icon:LinuxImage,
-                subtitle:'Instead of CLI tools , programmers tend to use terminal as their weapond , it\'s essential to get used to linux commands.',
-            },
-        ],
+        advantage:{
+            title:'Advantages',
+            card:[
+                { 
+                    title:'Meet talented members',
+                    icon:HackerImage,
+                    subtitle:'In our club, there are plenty of talented members hiding behind monitors. Making friends with them not only improve your programming skills, but also help you learn more about the amazing IT field.',
+                },
+                { 
+                    title:'Start coding from senior high',
+                    icon:RocketImage,
+                    subtitle:'Start your journey of of becoming an expert in computer science at the age of 16! While your friends are still playing Brawl Stars, you are already building your own AI model to play that garbage game.',
+                },
+                { 
+                    title:'Get experience from seniors',
+                    icon:SocialcareImage,
+                    subtitle:'Our friendly seniors have plenty of experience in the IT world, you can learn from their experience. Such as, how to get a 5/4 in APCS, how to meet girls while the only girls you met are Vtubers, why this year’s YTP still don’t provide free fried chicken.',
+                },
+                { 
+                    title:'Good academic atmosphere',
+                    icon:ComputerImage,
+                    subtitle:'The nice and comfy atmosphere in the club can increase your productivity in learning.',
+                },
+            ],
+        },
+        course:{
+            title:'Course',
+            card:[
+                { 
+                    title:'Algorithm',
+                    icon:AlgoImage,
+                    subtitle:'From C++ syntax to data structures and algorithm , learn competitive programming through online judges problems and contests.',
+                },
+                { 
+                    title:'Web Devlopment',
+                    icon:WebdevImage,
+                    subtitle:'Learn Web Application Exploitation by solving CTF and look into common web attacks .',
+                },
+                { 
+                    title:'Cyber Security',
+                    icon:CyberImage,
+                    subtitle:'wirnhwon knlkfnbsmngo; awoiethubndfkb aegegwegweg w wewegweg  g ewwe',
+                },
+                { 
+                    title:'Mechine Learing',
+                    icon:AIImage,
+                    subtitle:'The most trend tech nowadays , learn AI stack from Keras , PyTorch to Tensenflow and all sorts of Neural Network',
+                },
+                { 
+                    title:'Linux',
+                    icon:LinuxImage,
+                    subtitle:'Instead of CLI tools , programmers tend to use terminal as their weapond , it\'s essential to get used to linux commands.',
+                },
+            ],
+        },
         members:"see all club members",
     },
     {
@@ -101,66 +121,107 @@ const content = [
             title:'關於我們',
             subtitle:'我們是一群來自武陵高中，喜歡 coding 同時也熱於分享學習經驗的宅宅',
         },
-        advantage:[
-            { 
-                title:'認識酷酷的電神',
-                icon:HackerImage,
-                subtitle:'武陵資研有許多身藏不露的電神，所以請勿觸摸身旁同學，我們一概不負責因為高壓電而受傷的狀況',
+        IntroImages:[
+            {
+                url:GroupImage,
+                txt:'學長姐親自輔導',
             },
-            { 
-                title:'從高中開始程式生涯',
-                icon:RocketImage,
-                subtitle:'當身旁的同學還在打荒野亂鬥，你已經在寫艾爾登法環的外掛無情開賺了',
+            {
+                url:BackImage,
+                txt:'每台電腦都有 RTX™ 2080 Ti',
             },
-            { 
-                title:'得到學長姐的經驗',
-                icon:SocialcareImage,
-                subtitle:'如何從 APCS 3/2 考到 5/4 ？ 如何在北二區資訊學科能力競賽喇分？ 如何在 YTP 搶到炸雞？',
-            },
-            { 
-                title:'舒服的社團氛圍',
-                icon:ComputerImage,
-                subtitle:'教室沒有怪獸，只有此起比落的鍵盤聲，現場收聽ASMR Programming',
+            {
+                url:LocationImage,
+                txt:'www',
             },
         ],
-        course:[
-            { 
-                title:'演算法競賽',
-                icon:AlgoImage,
-                subtitle:'不保證能學會毒瘤資料結構和神奇的演算法，但是保證能讓你學到程競中的電神裝弱文化。',
-            },
-            { 
-                title:'前端網頁開發',
-                icon:WebdevImage,
-                subtitle:'手把手教你用 HTML CSS Javascript 刻出你現在看到的網站（ 沒',
-            },
-            { 
-                title:'資訊安全',
-                icon:CyberImage,
-                subtitle:'沒辦法教你駭入同學FB ，但是能學會如何找網頁漏洞並成為 bugs hunter ！',
-            },
-            { 
-                title:'Mechine Learing',
-                icon:AIImage,
-                subtitle:'The most trend tech nowadays , learn AI stack from Keras , PyTorch to Tensenflow.',
-            },
-            { 
-                title:'Linux',
-                icon:LinuxImage,
-                subtitle:'讓你學會在你同學面前帥氣的使用 terminal 打 linux command',
-            },
-        ],
+        advantage:{
+            title:'優勢',
+            card:[
+                { 
+                    title:'認識酷酷的電神',
+                    icon:HackerImage,
+                    subtitle:'武陵資研有許多身藏不露的電神，所以請勿觸摸身旁同學，我們一概不負責因為高壓電而受傷的狀況',
+                },
+                { 
+                    title:'從高中開始程式生涯',
+                    icon:RocketImage,
+                    subtitle:'當身旁的同學還在打荒野亂鬥，你已經在寫艾爾登法環的外掛無情開賺了',
+                },
+                { 
+                    title:'得到學長姐的經驗',
+                    icon:SocialcareImage,
+                    subtitle:'如何從 APCS 3/2 考到 5/4 ？ 如何在北二區資訊學科能力競賽喇分？ 如何在 YTP 搶到炸雞？',
+                },
+                { 
+                    title:'舒服的社團氛圍',
+                    icon:ComputerImage,
+                    subtitle:'教室沒有怪獸，只有此起比落的鍵盤聲，現場收聽 Programming ASMR',
+                },
+            ],
+        },
+        course:{
+            title:'課程',
+            card:[
+                { 
+                    title:'演算法競賽',
+                    icon:AlgoImage,
+                    subtitle:'不保證能學會毒瘤資料結構和神奇的演算法，但是保證能讓你學到程競中的電神裝弱文化',
+                },
+                { 
+                    title:'前端網頁開發',
+                    icon:WebdevImage,
+                    subtitle:'手把手教你用 HTML CSS Javascript 刻出你現在看到的網站',
+                },
+                { 
+                    title:'資訊安全',
+                    icon:CyberImage,
+                    subtitle:'沒辦法教你駭入同學FB ，但是能學會如何找網頁漏洞並成為 bugs hunter ！',
+                },
+                { 
+                    title:'機器學習',
+                    icon:AIImage,
+                    subtitle:'超前部署未來的趨勢，囊括影像辨識到語言處理',
+                },
+                { 
+                    title:'Linux',
+                    icon:LinuxImage,
+                    subtitle:'讓你學會在你同學面前帥氣的使用 terminal 打 linux command',
+                },
+            ],
+        },
         members:"看看有誰！",
     },
 ]
 
+
+const SocialLinksList = [
+    // icon : awsome icon 
+    {
+        icon:'fa-envelope',
+        link: 'wlcsc1995@gmail.com',
+    },
+    {
+        icon:'fa-github',
+        link: 'https://github.com/orgs/Wu-Ling-CSC',
+    },
+    {
+        icon:'fa-instagram',
+        link:'https://www.instagram.com/wlcsc_27/',
+    },
+    {
+        icon:'fa-facebook',
+        link:'https://www.facebook.com/WLCSC/',
+    },
+]; 
+
 // const texts = ['About' , 'Advantage' , 'Course' , 'Members' ];
 
-const Buttons = () => {
+const Buttons = (props) => {
     
     return (
         <nav className='Buttons'>
-            { texts.map( ele => <Button text={ ele } key={ ele } />)}
+            { content[props.lang].button.map( ele => <Button text={ ele } key={ ele } />)}
         </nav>
     );
 }
@@ -192,12 +253,12 @@ const Change = ( props ) =>{
 }
 
 
-const SideBar = () =>{
+const SideBar = ( props ) =>{
     var [ IsActive , toggle ] = useState(false);
     return (
         <div className={'SideBar ' }>
             <div className={'SideBarGroup '} style={ {right:(IsActive ? '0px':'-90px')} }>
-                { texts.map( ele=> <div className={"mobile-nav"} ><a href={ '#'+ele }>{ ele }</a></div>) }
+                { content[props.lang].button.map( ele=> <div className={"mobile-nav"} ><a href={ '#'+ele }>{ ele }</a></div>) }
             </div>
             <div className='SideBar icon' onClick={()=>{ 
                 console.log( 'click\n'  ,IsActive );
@@ -437,7 +498,7 @@ class LinkedListBackground extends React.Component {
     render(){
         return (
             <div className="LinkedListBackground" id='Members'>
-                <a href='/members'><h1>See all club members</h1></a>
+                <a href='/members'><h1>{ content[this.props.lang].members} </h1></a>
                 <Sketch setup={this.setup} draw={this.draw} />
             </div>
         );
@@ -448,30 +509,30 @@ class GameMachine extends React.Component {
 
 }
 
-const IntroImages = [
-    {
-        url:GroupImage,
-        txt:'eetwe ehrhw ewe grhre hwre wgwgw ',
-    },
-    {
-        url:BackImage,
-        txt:'eetwe ehrhw ewe grhre hwre wgwgw ',
-    },
-    {
-        url:LocationImage,
-        txt:'eetwe ehrhw ewe grhre hwre wgwgw ',
-    },
-]
+// const IntroImages = [
+//     {
+//         url:GroupImage,
+//         txt:'discuss obstacle with senior clubmates',
+//     },
+//     {
+//         url:BackImage,
+//         txt:'equipped RTX™ 2080 Ti on every computer',
+//     },
+//     {
+//         url:LocationImage,
+//         txt:'www',
+//     },
+// ]
 
-const About = ()=>{
+const About = ( props )=>{
     return (
         <div className='About' id='About'>
             <div className='Text'>
-                <h1>About us </h1>
-                <p>A group of student love computer science , coding and sharing in Wuling senior high school.</p>
+                <h1>{ content[props.lang].about.title }</h1>
+                <p>{ content[props.lang].about.subtitle }</p>
             </div>
             <div className='ImgContainer'>
-                { IntroImages.map( (ele,idx)=>{
+                { content[props.lang].IntroImages.map( (ele,idx)=>{
                     return (
                         <div className={'ImgBox i'+idx} key={ele.url} >
                             <img src={ele.url} alt='des'/>
@@ -484,28 +545,28 @@ const About = ()=>{
     );
 }
 
-const AdvantageList = [
-    { 
-        title:'Meet talented members',
-        icon:HackerImage,
-        subtitle:'qtqtqtqtqtsdgkgnregnqoirgnkabal blkb wegewgwegwegwegwgwegewg',
-    },
-    { 
-        title:'Start coding from senior high',
-        icon:RocketImage,
-        subtitle:'sdgknbaorn awiognwao waasfafafasfa wefwefwegwegweg fqfqefwegew',
-    },
-    { 
-        title:'Get experience from seniors',
-        icon:SocialcareImage,
-        subtitle:'wirnhwon knlkfnbsmngo; awoiethubndfkb aegegwegweg w wewegweg  g ewwe',
-    },
-    { 
-        title:'Good academic atmosphere',
-        icon:ComputerImage,
-        subtitle:'Learn computer science and all sorts of cool stuff with friends and seniors',
-    },
-];
+// const AdvantageList = [
+//     { 
+//         title:'Meet talented members',
+//         icon:HackerImage,
+//         subtitle:'qtqtqtqtqtsdgkgnregnqoirgnkabal blkb wegewgwegwegwegwgwegewg',
+//     },
+//     { 
+//         title:'Start coding from senior high',
+//         icon:RocketImage,
+//         subtitle:'sdgknbaorn awiognwao waasfafafasfa wefwefwegwegweg fqfqefwegew',
+//     },
+//     { 
+//         title:'Get experience from seniors',
+//         icon:SocialcareImage,
+//         subtitle:'wirnhwon knlkfnbsmngo; awoiethubndfkb aegegwegweg w wewegweg  g ewwe',
+//     },
+//     { 
+//         title:'Good academic atmosphere',
+//         icon:ComputerImage,
+//         subtitle:'Learn computer science and all sorts of cool stuff with friends and seniors',
+//     },
+// ];
 
 
 
@@ -519,44 +580,44 @@ const AdvCard = (props)=>{
     );
 }
 
-const Advantage = ()=>{
+const Advantage = ( props )=>{
 
     // console.log( AdvantageList );
     return (
         <div className='Advantage' id='Advantage'>
-            <h1>Advantages ?</h1>
-            { AdvantageList.map( (ele)=> < AdvCard ele={ele} key={ele.icon}/> ) }
+            <h1>{ content[props.lang].advantage.title }</h1>
+            { content[props.lang].advantage.card.map( (ele)=> < AdvCard ele={ele} key={ele.icon}/> ) }
         </div>
     );
 }
 
-const CourseList = [
-    { 
-        title:'Algorithm',
-        icon:AlgoImage,
-        subtitle:'From C++ syntax to data structures and algorithm , learn competitive programming through online judges problems and contests.',
-    },
-    { 
-        title:'Web Devlopment',
-        icon:WebdevImage,
-        subtitle:'Learn Web Application Exploitation by solving CTF and look into common web attacks .',
-    },
-    { 
-        title:'Cyber Security',
-        icon:CyberImage,
-        subtitle:'wirnhwon knlkfnbsmngo; awoiethubndfkb aegegwegweg w wewegweg  g ewwe',
-    },
-    { 
-        title:'Mechine Learing',
-        icon:AIImage,
-        subtitle:'The most trend tech nowadays , learn AI stack from Keras , PyTorch to Tensenflow.',
-    },
-    { 
-        title:'Linux',
-        icon:LinuxImage,
-        subtitle:'Instead of CLI tools , programmers tend to use terminal as their weapond , it\'s essential to get used to linux commands.',
-    },
-];
+// const CourseList = [
+//     { 
+//         title:'Algorithm',
+//         icon:AlgoImage,
+//         subtitle:'From C++ syntax to data structures and algorithm , learn competitive programming through online judges problems and contests.',
+//     },
+//     { 
+//         title:'Web Devlopment',
+//         icon:WebdevImage,
+//         subtitle:'Learn Web Application Exploitation by solving CTF and look into common web attacks .',
+//     },
+//     { 
+//         title:'Cyber Security',
+//         icon:CyberImage,
+//         subtitle:'wirnhwon knlkfnbsmngo; awoiethubndfkb aegegwegweg w wewegweg  g ewwe',
+//     },
+//     { 
+//         title:'Mechine Learing',
+//         icon:AIImage,
+//         subtitle:'The most trend tech nowadays , learn AI stack from Keras , PyTorch to Tensenflow.',
+//     },
+//     { 
+//         title:'Linux',
+//         icon:LinuxImage,
+//         subtitle:'Instead of CLI tools , programmers tend to use terminal as their weapond , it\'s essential to get used to linux commands.',
+//     },
+// ];
 
 
 
@@ -573,11 +634,11 @@ const CourseCard= (props)=>{
         </div>
     );
 }
-const Course= ()=>{
+const Course= ( props )=>{
     return (
         <div className='Course' id='Course'>
-            <h1>Courses ?</h1>
-            { CourseList.map( (ele , idx )=><CourseCard ele={ele} ith={ idx } key={ele.title}/>) }
+            <h1>{ content[props.lang].course.title }</h1>
+            { content[props.lang].course.card.map( (ele , idx )=><CourseCard ele={ele} ith={ idx } key={ele.title}/>) }
         </div>
     );
 }
@@ -586,8 +647,8 @@ const Header = ( props )=>{
     return (
         <header>
             <div className={ 'Header'} >
-                <Logo/>
-                <Buttons/>
+                <Logo />
+                <Buttons lang={ props.lang }/>
                 <Change callback={ props.callback }/>
             </div>
         </header>
@@ -597,43 +658,26 @@ const Header = ( props )=>{
 const Language = ( props )=>{
     return (
         <div className='Language' onClick={ props.callback } >
-            <i class="fa fa-earth-americas icon"></i>
+            <i class="fa fa-globe icon"></i>
         </div>
     );
 }
 
 const Main = ( props )=>{
+
+    console.log( 'Main' , props );
     return(
         <div className={'Main'}>
             <TextBackground />
             {/* <GameMachine /> */}
-            < About />
-            <Advantage />
-            <Course />
-            <LinkedListBackground />
+            < About lang={ props.lang } />
+            <Advantage lang={ props.lang }/>
+            <Course lang={ props.lang }/>
+            <LinkedListBackground lang={ props.lang }/>
             {/* <QA /> */}
         </div>
     );
 }
-
-const SocialLinksList = [
-    {
-        icon:'fa-envelope',
-        link: 'wlcsc1995@gmail.com',
-    },
-    {
-        icon:'fa-github',
-        link: 'https://github.com/orgs/Wu-Ling-CSC',
-    },
-    {
-        icon:'fa-instagram',
-        link:'https://www.instagram.com/wlcsc_27/',
-    },
-    {
-        icon:'fa-facebook',
-        link:'https://www.facebook.com/WLCSC/',
-    },
-]; 
 
 const SocialLinks = ()=>{
     return (
@@ -685,7 +729,7 @@ class App extends React.Component {
         flag=!flag;
     }
 
-    handleTheme(){
+    handleLang(){
         console.log( "Lang" , this.state.Lang );
         if( this.state.Lang===1 ){
             this.setState( {Lang : 0} );
@@ -698,10 +742,10 @@ class App extends React.Component {
 
         return (
             <div className={ T(this.state.IsDark)+'App'}>
-                <Header callback={ ()=>this.handleTheme() } lang={ this.Lang }/>
-                <SideBar lang={ this.Lang } />
-                <Language callback={ ()=>this.handleTheme() } />
-                <Main lang={ this.Lang }/>
+                <Header callback={ ()=>this.handleTheme() } lang={ this.state.Lang }/>
+                <SideBar lang={ this.state.Lang } />
+                <Language callback={ ()=>this.handleLang() } />
+                <Main lang={ this.state.Lang }/>
                 <Footer/>
             </div>
         );
