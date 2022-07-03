@@ -58,15 +58,87 @@ html{
   display:inline-block;
 } */
 
+.SideBar{
+  position: absolute;
+  top: 54px;
+  right: 0px;
+}
+
+.SideBarGroup{
+  position: fixed;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  transition: 1s;
+  font-size: small;
+}
+
+.Dark .SideBarGroup{
+  border-left: solid 4px #414141;
+}
+
+.Light .SideBarGroup{
+  border-left: solid 4px #767373;
+}
+
+.mobile-nav{
+  padding-top: 5px;
+  padding-top: 5px;
+}
+
+.Dark .SideBarGroup{
+  background-color: rgb(120, 120, 120);
+}
+.Dark .SideBar a{
+  color: #fff;
+}
+
+.Light .SideBarGroup{
+  background-color: rgb(219, 219, 219);
+}
+.Light .SideBar a{
+  color: rgb(71, 52, 43);
+}
+
+.SideBar a{
+  text-decoration: none;
+}
+
+.SideBar .icon {
+  z-index: 25;
+  position: fixed;
+  top:17px;
+  right:10px;
+  padding: 0;
+}
+
+.Dark .SideBar .icon {
+  background-color: #000;
+  color: #fff;
+}
+
+.Light .SideBar .icon {
+  background-color: #fff;
+  color: #585756;
+}
+
 @media all and (min-width: 800px) {
   .Buttons{
     display:inline-block;
+  }
+  .SideBar{
+    display: none;
   }
 }
 /* pad */
 @media all and (max-width: 799px) {
   .Buttons{
     display: none;
+  }
+  .SideBar{
+    display: block;
   }
 }
 .Buttons a{
@@ -208,6 +280,7 @@ html{
 @media all and (max-width: 799px) {
   .Change{
     top:20px;
+    right: 50px;
   }
 }
 
@@ -604,15 +677,14 @@ input:focus + .slider {
 
 
 
-.About {
-  height: 500px;
-  padding-top: 100px;
-}
+
 
 @media all and (min-width: 800px) {
   .About{
     display: flex;
     padding-bottom: 30px;
+    height: 500px;
+    padding-top: 100px;
   }
   .About .Text{
     width: 20%;
@@ -628,6 +700,10 @@ input:focus + .slider {
 }
 /* pad */
 @media all and (max-width: 799px) {
+  .About {
+    height: 500px;
+    padding-top: 30px;
+  }
   .About .Text{
     width: 80%;
   }

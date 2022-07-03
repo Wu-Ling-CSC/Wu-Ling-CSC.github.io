@@ -75,11 +75,12 @@ const Change = ( props ) =>{
 
 
 const SideBar = () =>{
-    var [ IsActive , toggle ] = useState(true);
+    var [ IsActive , toggle ] = useState(false);
     return (
-        <div className={'SideBar '+(IsActive ? 'active':'') }>
-
-            { texts.map( ele=> <div className={"mobile-nav"} ><a href={ '#'+ele }>{ ele }</a></div>) }
+        <div className={'SideBar ' }>
+            <div className={'SideBarGroup '} style={ {right:(IsActive ? '0px':'-90px')} }>
+                { texts.map( ele=> <div className={"mobile-nav"} ><a href={ '#'+ele }>{ ele }</a></div>) }
+            </div>
             <div className='SideBar icon' onClick={()=>{ 
                 console.log( 'click\n'  ,IsActive );
                 toggle(IsActive=!IsActive); } }>
