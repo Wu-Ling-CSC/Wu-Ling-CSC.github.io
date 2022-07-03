@@ -37,22 +37,125 @@ const typingSequence = ['WLCSC', 3000, 'Wu Ling',3000,'Computer Science',3000,'A
 const T = ( t )=> ( t===1? DARK:LIGHT);
 var flag=1;
 
-const Button = ( props )=>{
-   return (
-        <div className={"button-top"} ><a href={ '#'+props.text }>{ props.text }</a></div>
-   );
-};
+const content = [
+    {
+        button:['About' , 'Advantage' , 'Course' , 'Members' ],
+        about:{
+            title:'About us',
+            subtitle:'A group of student love computer science , coding and sharing experience in Wuling senior high school.',
+        },
+        advantage:[
+            { 
+                title:'Meet talented members',
+                icon:HackerImage,
+                subtitle:'qtqtqtqtqtsdgkgnregnqoirgnkabal blkb wegewgwegwegwegwgwegewg',
+            },
+            { 
+                title:'Start coding from senior high',
+                icon:RocketImage,
+                subtitle:'sdgknbaorn awiognwao waasfafafasfa wefwefwegwegweg fqfqefwegew',
+            },
+            { 
+                title:'Get experience from seniors',
+                icon:SocialcareImage,
+                subtitle:'wirnhwon knlkfnbsmngo; awoiethubndfkb aegegwegweg w wewegweg  g ewwe',
+            },
+            { 
+                title:'Good academic atmosphere',
+                icon:ComputerImage,
+                subtitle:'Learn computer science and all sorts of cool stuff with friends and seniors',
+            },
+        ],
+        course:[
+            { 
+                title:'Algorithm',
+                icon:AlgoImage,
+                subtitle:'From C++ syntax to data structures and algorithm , learn competitive programming through online judges problems and contests.',
+            },
+            { 
+                title:'Web Devlopment',
+                icon:WebdevImage,
+                subtitle:'Learn Web Application Exploitation by solving CTF and look into common web attacks .',
+            },
+            { 
+                title:'Cyber Security',
+                icon:CyberImage,
+                subtitle:'wirnhwon knlkfnbsmngo; awoiethubndfkb aegegwegweg w wewegweg  g ewwe',
+            },
+            { 
+                title:'Mechine Learing',
+                icon:AIImage,
+                subtitle:'The most trend tech nowadays , learn AI stack from Keras , PyTorch to Tensenflow.',
+            },
+            { 
+                title:'Linux',
+                icon:LinuxImage,
+                subtitle:'Instead of CLI tools , programmers tend to use terminal as their weapond , it\'s essential to get used to linux commands.',
+            },
+        ],
+        members:"see all club members",
+    },
+    {
+        button:['關於' , '優勢' , '課程' , '成員' ],
+        about:{
+            title:'關於我們',
+            subtitle:'我們是一群來自武陵高中，喜歡 coding 同時也熱於分享學習經驗的宅宅',
+        },
+        advantage:[
+            { 
+                title:'認識酷酷的電神',
+                icon:HackerImage,
+                subtitle:'武陵資研有許多身藏不露的電神，所以請勿觸摸身旁同學，我們一概不負責因為高壓電而受傷的狀況',
+            },
+            { 
+                title:'從高中開始程式生涯',
+                icon:RocketImage,
+                subtitle:'當身旁的同學還在打荒野亂鬥，你已經在寫艾爾登法環的外掛無情開賺了',
+            },
+            { 
+                title:'得到學長姐的經驗',
+                icon:SocialcareImage,
+                subtitle:'如何從 APCS 3/2 考到 5/4 ？ 如何在北二區資訊學科能力競賽喇分？ 如何在 YTP 搶到炸雞？',
+            },
+            { 
+                title:'舒服的社團氛圍',
+                icon:ComputerImage,
+                subtitle:'教室沒有怪獸，只有此起比落的鍵盤聲，現場收聽ASMR Programming',
+            },
+        ],
+        course:[
+            { 
+                title:'演算法競賽',
+                icon:AlgoImage,
+                subtitle:'不保證能學會毒瘤資料結構和神奇的演算法，但是保證能讓你學到程競中的電神裝弱文化。',
+            },
+            { 
+                title:'前端網頁開發',
+                icon:WebdevImage,
+                subtitle:'手把手教你用 HTML CSS Javascript 刻出你現在看到的網站（ 沒',
+            },
+            { 
+                title:'資訊安全',
+                icon:CyberImage,
+                subtitle:'沒辦法教你駭入同學FB ，但是能學會如何找網頁漏洞並成為 bugs hunter ！',
+            },
+            { 
+                title:'Mechine Learing',
+                icon:AIImage,
+                subtitle:'The most trend tech nowadays , learn AI stack from Keras , PyTorch to Tensenflow.',
+            },
+            { 
+                title:'Linux',
+                icon:LinuxImage,
+                subtitle:'讓你學會在你同學面前帥氣的使用 terminal 打 linux command',
+            },
+        ],
+        members:"看看有誰！",
+    },
+]
 
-const Logo = ()=>{
-    return (
-        <a className='Logo' href='#Start'>
-            <img src={LogoImage} alt='Logo'/>
-            <span> WLCSC </span>
-        </a>
-    );
-}
+// const texts = ['About' , 'Advantage' , 'Course' , 'Members' ];
 
-const texts = ['About' , 'Advantage' , 'Course' , 'Members' ];
 const Buttons = () => {
     
     return (
@@ -61,6 +164,21 @@ const Buttons = () => {
         </nav>
     );
 }
+
+const Button = ( props )=>{
+    return (
+         <div className={"button-top"} ><a href={ '#'+props.text }>{ props.text }</a></div>
+    );
+ };
+ 
+ const Logo = ()=>{
+     return (
+         <a className='Logo' href='#Start'>
+             <img src={LogoImage} alt='Logo'/>
+             <span> WLCSC </span>
+         </a>
+     );
+ }
 
 const Change = ( props ) =>{
     return (
@@ -350,7 +468,7 @@ const About = ()=>{
         <div className='About' id='About'>
             <div className='Text'>
                 <h1>About us </h1>
-                <p>wetwet wegwe wegwe weewg wegweg wgew hrg wgwg wegewg wegweg wegewgew </p>
+                <p>A group of student love computer science , coding and sharing in Wuling senior high school.</p>
             </div>
             <div className='ImgContainer'>
                 { IntroImages.map( (ele,idx)=>{
@@ -416,12 +534,12 @@ const CourseList = [
     { 
         title:'Algorithm',
         icon:AlgoImage,
-        subtitle:'qtqtqtqtqtsdgkgnregnqoirgnkabal blkb wegewgwegwegwegwgwegewg',
+        subtitle:'From C++ syntax to data structures and algorithm , learn competitive programming through online judges problems and contests.',
     },
     { 
         title:'Web Devlopment',
         icon:WebdevImage,
-        subtitle:'sdgknbaorn awiognwao waasfafafasfa wefwefwegwegweg fqfqefwegew',
+        subtitle:'Learn Web Application Exploitation by solving CTF and look into common web attacks .',
     },
     { 
         title:'Cyber Security',
@@ -431,12 +549,12 @@ const CourseList = [
     { 
         title:'Mechine Learing',
         icon:AIImage,
-        subtitle:'Learn computer science and all sorts of cool stuff with friends and seniors',
+        subtitle:'The most trend tech nowadays , learn AI stack from Keras , PyTorch to Tensenflow.',
     },
     { 
         title:'Linux',
         icon:LinuxImage,
-        subtitle:'Learn computer science and all sorts of cool stuff with friends and seniors',
+        subtitle:'Instead of CLI tools , programmers tend to use terminal as their weapond , it\'s essential to get used to linux commands.',
     },
 ];
 
@@ -475,6 +593,14 @@ const Header = ( props )=>{
         </header>
     ); 
 };
+
+const Language = ( props )=>{
+    return (
+        <div className='Language' onClick={ props.callback } >
+            <i class="fa fa-earth-americas icon"></i>
+        </div>
+    );
+}
 
 const Main = ( props )=>{
     return(
@@ -546,6 +672,7 @@ class App extends React.Component {
         super( props );
         this.state = {
             IsDark : 1,
+            Lang :1,
         };
     }
 
@@ -558,13 +685,23 @@ class App extends React.Component {
         flag=!flag;
     }
 
+    handleTheme(){
+        console.log( "Lang" , this.state.Lang );
+        if( this.state.Lang===1 ){
+            this.setState( {Lang : 0} );
+        }
+        else this.setState( {Lang : 1} );
+        // flag=!flag;
+    }
+
     render(){
 
         return (
             <div className={ T(this.state.IsDark)+'App'}>
-                <Header callback={ ()=>this.handleTheme() }  />
-                <SideBar/>
-                <Main/>
+                <Header callback={ ()=>this.handleTheme() } lang={ this.Lang }/>
+                <SideBar lang={ this.Lang } />
+                <Language callback={ ()=>this.handleTheme() } />
+                <Main lang={ this.Lang }/>
                 <Footer/>
             </div>
         );
