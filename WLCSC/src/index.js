@@ -64,7 +64,7 @@ const content = [
                 { 
                     title:'Meet talented members',
                     icon:HackerImage,
-                    subtitle:'In our club, there are plenty of talented members hiding behind monitors. Making friends with them not only improve your programming skills, but also help you learn more about the amazing IT field.',
+                    subtitle:'In our club, there are plenty of talented members hiding behind monitors. Making friends with them not only improves your programming skills, but also helps you learn more about the amazing IT field.',
                 },
                 { 
                     title:'Start coding from senior high',
@@ -94,7 +94,7 @@ const content = [
                 { 
                     title:'Web Devlopment',
                     icon:WebdevImage,
-                    subtitle:'Learn Web Application Exploitation by solving CTF and look into common web attacks .',
+                    subtitle:'Learn Front-end fundamental tech , including HTML CSS Javascript . Design your own personal website step by step.',
                 },
                 { 
                     title:'Cyber Security',
@@ -109,7 +109,7 @@ const content = [
                 { 
                     title:'Linux',
                     icon:LinuxImage,
-                    subtitle:'Instead of CLI tools , programmers tend to use terminal as their weapond , it\'s essential to get used to linux commands.',
+                    subtitle:'Instead of GUI tools , programmers tend to use terminal as their weapons , it\'s essential to get used to linux commands.',
                 },
             ],
         },
