@@ -753,7 +753,8 @@ input:focus + .slider {
 }
 
 .About .ImgContainer{
-  height: 350px;
+  /* height: 350px; */
+  height: 500px;
   /* padding-left: 5%;
   padding-right: 5%; */
   padding-top: 100px;
@@ -789,9 +790,49 @@ input:focus + .slider {
 .About .ImgBox span {
   position: absolute;
   bottom: 10px;
+  color: #fff;
+  text-shadow: #000 2px 1px 8px;
 }
+@media all and (min-width: 1300px) {
+  
+  .About .i0{
+    z-index: 10;
+    /* left: 30px; */
+    left:4.5%;
+    top: 30px;
+  }
+  .About .i0 span{
+    left: 7px;
+  }
+  .About .i0 img{
+    width: 400px;
+  }
 
-@media all and (min-width: 1000px) {
+  .About .i1{
+    z-index: 5;
+    /* left: 15%; */
+    top:180px;
+  }
+  .About .i1 span{
+    left: 7px;
+  }
+  .About .i1 img{
+    width: 700px;
+  }
+
+
+  .About .i2{
+    top:80px;
+    left:70%;
+  }
+  .About .i2 span{
+    left: 7px;
+  }
+  .About .i2 img{
+    width: 180px;
+  }
+}
+@media all and (min-width: 1000px) and (max-width:1299px){
   
   .About .i0{
     z-index: 10;
