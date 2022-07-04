@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/react-gh-pages/static/css/main.73631924.css",
-    "main.js": "/react-gh-pages/static/js/main.480769fd.js",
-    "static/media/rocket.gif": "/react-gh-pages/static/media/rocket.40329a34c4c138180450.gif",
-    "static/media/hacker.gif": "/react-gh-pages/static/media/hacker.1c958506512b997b8ecb.gif",
-    "static/media/social-care.gif": "/react-gh-pages/static/media/social-care.0e0be23e6d9c942f7083.gif",
-    "static/media/WLCSC_Logo.png": "/react-gh-pages/static/media/WLCSC_Logo.696be5f39f8d5bade961.png",
-    "static/media/computer.gif": "/react-gh-pages/static/media/computer.ef372834e2a4ce3eef91.gif",
-    "static/media/Group.jpg": "/react-gh-pages/static/media/Group.b232268a8d94e1c5f76d.jpg",
-    "static/media/Back.jpg": "/react-gh-pages/static/media/Back.2deb1e00dc5283aac3a0.jpg",
-    "static/media/Location.png": "/react-gh-pages/static/media/Location.28c037c5e19892439cbd.png",
-    "static/media/artificial-intelligence.png": "/react-gh-pages/static/media/artificial-intelligence.0d076b64fab39aa45937.png",
-    "static/media/encrypted.png": "/react-gh-pages/static/media/encrypted.7aadea64e6e9e6951098.png",
-    "index.html": "/react-gh-pages/index.html",
-    "main.73631924.css.map": "/react-gh-pages/static/css/main.73631924.css.map",
-    "main.480769fd.js.map": "/react-gh-pages/static/js/main.480769fd.js.map"
+    "main.css": "/WLCSC/static/css/main.73631924.css",
+    "main.js": "/WLCSC/static/js/main.287b83ac.js",
+    "static/media/rocket.gif": "/WLCSC/static/media/rocket.40329a34c4c138180450.gif",
+    "static/media/hacker.gif": "/WLCSC/static/media/hacker.1c958506512b997b8ecb.gif",
+    "static/media/social-care.gif": "/WLCSC/static/media/social-care.0e0be23e6d9c942f7083.gif",
+    "static/media/WLCSC_Logo.png": "/WLCSC/static/media/WLCSC_Logo.696be5f39f8d5bade961.png",
+    "static/media/computer.gif": "/WLCSC/static/media/computer.ef372834e2a4ce3eef91.gif",
+    "static/media/Group.jpg": "/WLCSC/static/media/Group.b232268a8d94e1c5f76d.jpg",
+    "static/media/Back.jpg": "/WLCSC/static/media/Back.2deb1e00dc5283aac3a0.jpg",
+    "static/media/Location.png": "/WLCSC/static/media/Location.28c037c5e19892439cbd.png",
+    "static/media/artificial-intelligence.png": "/WLCSC/static/media/artificial-intelligence.0d076b64fab39aa45937.png",
+    "static/media/encrypted.png": "/WLCSC/static/media/encrypted.7aadea64e6e9e6951098.png",
+    "index.html": "/WLCSC/index.html",
+    "main.73631924.css.map": "/WLCSC/static/css/main.73631924.css.map",
+    "main.287b83ac.js.map": "/WLCSC/static/js/main.287b83ac.js.map"
   },
   "entrypoints": [
     "static/css/main.73631924.css",
-    "static/js/main.480769fd.js"
+    "static/js/main.287b83ac.js"
   ]
 }
