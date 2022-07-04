@@ -505,9 +505,9 @@ class LinkedListBackground extends React.Component {
     }
 }
 
-class GameMachine extends React.Component {
+// class GameMachine extends React.Component {
 
-}
+// }
 
 // const IntroImages = [
 //     {
