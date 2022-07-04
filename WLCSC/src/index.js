@@ -716,7 +716,7 @@ class App extends React.Component {
         super( props );
         this.state = {
             IsDark : 1,
-            Lang :1,
+            Lang :0,
         };
     }
 
