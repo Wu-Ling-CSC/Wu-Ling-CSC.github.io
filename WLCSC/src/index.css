@@ -681,7 +681,7 @@ input:focus + .slider {
 }
 
 .Dark .Footer{
-  background-color: #000;
+  background-color: rgb(29, 33, 34);
   color: #fff;
 }
 
@@ -696,7 +696,6 @@ input:focus + .slider {
 .social li {
   display: inline;
   padding: 20px;
-
   transition: .5s;
   opacity: 0.7;
 }
@@ -713,9 +712,9 @@ input:focus + .slider {
   color: #fff;
 }
 
-.Light .social a{
-  /* color: #f66f00; */
-}
+/* .Light .social a{
+  color: #f66f00;
+} */
 
 .Copyright{
   margin-top: 30px;
