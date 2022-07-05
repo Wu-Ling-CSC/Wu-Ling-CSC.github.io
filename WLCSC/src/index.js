@@ -402,6 +402,7 @@ class LinkedListBackground extends React.Component {
     }
     setup = (p5, parentRef) =>{
         let W = p5.windowWidth , H = p5.windowHeight-200;
+        if( H>500) H=500;
         p5.createCanvas( W , H ).parent(parentRef);
 
         this.N = p5.random( 3,5 );
