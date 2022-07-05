@@ -39,7 +39,12 @@ var flag=1;
 
 const content = [
     {
-        button:['About' , 'Advantage' , 'Course' , 'Members' ],
+        button:[
+            {text:'About' ,id:'About'},
+            {text:'Advantage' ,id:'Advantage'},
+            {text:'Course' ,id:'Course'},
+            {text:'Members' ,id:'Members'},
+        ],
         about:{
             title:'About us',
             subtitle:'A group of student love computer science , coding and sharing experience in Wuling senior high school.',
@@ -116,7 +121,12 @@ const content = [
         members:"see all club members",
     },
     {
-        button:['關於' , '優勢' , '課程' , '成員' ],
+        button:[
+            {text:'關於' ,id:'About'},
+            {text:'優勢' ,id:'Advantage'},
+            {text:'課程' ,id:'Course'},
+            {text:'成員' ,id:'Members'},
+        ],
         about:{
             title:'關於我們',
             subtitle:'我們是一群來自武陵高中，喜歡 coding 同時也熱於分享學習經驗的宅宅',
@@ -221,14 +231,14 @@ const Buttons = (props) => {
     
     return (
         <nav className='Buttons'>
-            { content[props.lang].button.map( ele => <Button text={ ele } key={ ele } />)}
+            { content[props.lang].button.map( ele => <Button text={ ele.text } id={ ele.id} key={ ele.text } />)}
         </nav>
     );
 }
 
 const Button = ( props )=>{
     return (
-         <div className={"button-top"} ><a href={ '#'+props.text }>{ props.text }</a></div>
+         <div className={"button-top"} ><a href={ '#'+props.id }>{ props.text }</a></div>
     );
  };
  
@@ -258,7 +268,7 @@ const SideBar = ( props ) =>{
     return (
         <div className={'SideBar ' }>
             <div className={'SideBarGroup '} style={ {right:(IsActive ? '0px':'-90px')} }>
-                { content[props.lang].button.map( ele=> <div className={"mobile-nav"} ><a href={ '#'+ele }>{ ele }</a></div>) }
+                { content[props.lang].button.map( ele=> <div className={"mobile-nav"} ><a href={ '#'+ele.id }>{ ele.text }</a></div>) }
             </div>
             <div className='SideBar icon' onClick={()=>{ 
                 console.log( 'click\n'  ,IsActive );
