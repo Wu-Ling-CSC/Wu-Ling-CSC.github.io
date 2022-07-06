@@ -1076,3 +1076,153 @@ input:focus + .slider {
 .Light .Language{
   color:#585756;
 }
+
+
+/* MembersPage */
+.Members{
+  padding-bottom: 50px;
+}
+.Members h1{
+  font-size:40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.Dark .Members{
+  color: #fff;
+  background-color: rgb(99, 99, 99);
+}
+
+.Light .Members{
+  background-color: #fff;
+}
+
+.Members{
+  padding-top:100px;
+  text-align: center;
+}
+
+.MemberCard{
+  height: 400px;
+  width: 270px;
+  border-radius: 20px;
+
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-bottom: 10px;
+}
+.MemberCard img{
+  margin-top: 20px;
+  margin-bottom: 5px;
+  width: 150px;
+  border-radius: 50%;
+}
+
+.MemberCard h3{
+  opacity: 0.7;
+}
+
+.MemberCard p{
+  height: 72px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+  word-break: break-all;
+
+  display: inline-block;
+
+}
+
+.Dark .MemberCard{
+  background-color: #000;
+  color: #fff;
+  box-shadow: rgba(34, 38, 47, 0.4) 0px 19px 38px, rgba(41, 43, 71, 0.3) 0px 15px 12px;
+}
+.Light .MemberCard{
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.Light .MemberCard h3{
+  opacity: 0.5;
+}
+
+.Dark .Contact a{
+  color: #fff;
+}
+
+.Detail{
+  width: 100%;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+
+  color: #fff;
+
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+
+  font-size: smaller;
+  background-color: #585756;
+
+  text-align: left;
+}
+
+.Detail .red{
+  height: 10px;
+  width: 10px;
+  background-color: rgb(241, 48, 48);
+  border-radius: 50%;
+  display: inline-block;
+
+  margin-left: 10px;
+  margin-right: 3px;
+}
+
+.Detail .yellow{
+  height: 10px;
+  width: 10px;
+  background-color: rgb(255, 215, 17);
+  border-radius: 50%;
+  display: inline-block;
+
+  margin-right: 3px;
+}
+
+.Detail .green{
+  height: 10px;
+  width: 10px;
+  background-color: rgb(145, 214, 34);
+  border-radius: 50%;
+  display: inline-block;
+
+  margin-right: 15px;
+}
+
+.Detail .Url{
+  background-color:rgb(41, 42, 40);
+  width: 150px;
+  margin-top: 4px;
+  margin-bottom: 2px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 5px;
+  padding-right: 5px;
+
+  display: inline-block;
+}
+
+
+.Contact li {
+  display: inline;
+  padding: 20px;
+  transition: .5s;
+  opacity: 0.7;
+}
+
+.Contact li:hover{
+  opacity: 1;
+}
