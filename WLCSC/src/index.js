@@ -12,8 +12,7 @@ import {
 /*-- css ---*/
 import './index.css';
 
-/*-- Images --*/
-
+/*-- HomePage Images --*/
 // 3 images of [ About ]  
 import GroupImage from './images/Group.jpg'
 import BackImage from './images/Back.jpg' 
@@ -32,6 +31,9 @@ import WebdevImage from './images/data.png';
 import CyberImage from './images/encrypted.png';
 import LinuxImage from './images/linux.png';
 
+/*-- MembersPage Images --*/
+import member25_0 from './images/Members/25th-0.jpg';
+
 
 /*-- component --*/
 import Header from './components/Header/Header';
@@ -40,6 +42,8 @@ import Footer from './components/Footer/Footer';
 
 import SideBar from './components/Trigger/SideBar'
 import Language from './components/Trigger/Language'
+
+import MemberCard from './components/Main/Members';
 
 // predefine theme variables ( added to App className )
 const DARK = 'Dark ';
@@ -238,6 +242,117 @@ const SocialLinksList = [
 ]; 
 
 
+
+/*  MembersContent 
+
+    English Max : 90 char 
+    Mandarin Max : 60 char 
+
+*/
+
+const MembersContent = [
+    [
+        {
+            year:'25',
+            members:[
+                {
+                    name:"Jason Liu",
+                    position:"Director",
+                    content:"NCKU CSIE / Algorithm / Full stack / I'm weak > < / Still learing ...",
+                    img:member25_0,
+                    contact:{
+                        facebook:"https://www.facebook.com/profile.php?id=100010981865378",
+                        github:"https://github.com/jason810496",
+                        instagram:"https://www.instagram.com/jason2004424/",
+                    }
+                },
+            ],
+        },
+        {
+            year:'26',
+            members:[
+                {
+                    name:"123",
+                    position:"123",
+                    content:"123",
+                    img:"",
+                    contact:{
+                        facebook:"123",
+                        github:"123",
+                        instagram:"123",
+                    }
+                },
+            ],
+        },
+        {
+            year:'27',
+            members:[
+                {
+                    name:"123",
+                    position:"123",
+                    content:"123",
+                    img:"",
+                    contact:{
+                        facebook:"123",
+                        github:"123",
+                        instagram:"123",
+                    }
+                },
+            ],
+        },
+    ],
+    [
+        {
+            year:'25',
+            members:[
+                {
+                    name:"大牛",
+                    position:"社長",
+                    content:"NCKU CSIE / 程競 / 全端 / 我超弱 /負責雜耍/程競好難所以來弄網頁？",
+                    img:member25_0,
+                    contact:{
+                        facebook:"https://www.facebook.com/profile.php?id=100010981865378",
+                        github:"https://github.com/jason810496",
+                        instagram:"https://www.instagram.com/jason2004424/",
+                    }
+                },
+            ],
+        },
+        {
+            year:'26',
+            members:[
+                {
+                    name:"123",
+                    position:"123",
+                    content:"123",
+                    img:"",
+                    contact:{
+                        facebook:"123",
+                        github:"123",
+                        instagram:"123",
+                    }
+                },
+            ],
+        },
+        {
+            year:'27',
+            members:[
+                {
+                    name:"123",
+                    position:"123",
+                    content:"123",
+                    img:"",
+                    contact:{
+                        facebook:"123",
+                        github:"123",
+                        instagram:"123",
+                    }
+                },
+            ],
+        }
+    ]
+];
+
 class App extends React.Component {
     constructor ( props ){
         super( props );
@@ -287,15 +402,23 @@ class App extends React.Component {
 
     MembersPage = ()=>{
         return (
-            <div>
+            <div className='MembersPage' >
                 <Header callback={ ()=>this.handleTheme() } navigation={ content[this.state.Lang].navigation } />
                 <SideBar navigation={ content[this.state.Lang].navigation }/>
+                <div className='Members'>
+                    { MembersContent[this.state.Lang].map( ( club )=>( 
+                        <div className={ club.year+'th' }>
+                            <h1>{ club.year+'th' }</h1>
+                            { club.members.map( ( ele )=>( < MemberCard person={ ele }/> ))}
+                        </div>
+                    )) }
+                </div>
             </div>
         );
     }
 
     NotFoundPage = ()=>{
-        
+
     }
 
     render(){
@@ -323,6 +446,8 @@ class App extends React.Component {
     }
 }
 
+/*
+
 const Index = ()=>{
     return (
         <div>
@@ -338,6 +463,8 @@ const Home = ()=>{
         </div>
     );   
 }
+
+
 
 const Members = ()=>{
     return (
@@ -379,6 +506,8 @@ const Test = ()=>{
         
     );
 }
+
+*/
 
 const Root = ReactDOM.createRoot( document.getElementById( 'root' ) );
 Root.render( <App/> );
