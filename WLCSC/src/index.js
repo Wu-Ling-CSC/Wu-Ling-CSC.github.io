@@ -535,69 +535,6 @@ class App extends React.Component {
     }
 }
 
-/*
-
-const Index = ()=>{
-    return (
-        <div>
-            <h1>Index</h1>
-        </div>
-    );   
-}
-
-const Home = ()=>{
-    return (
-        <div>
-            <h1>Home</h1>
-        </div>
-    );   
-}
-
-
-
-const Members = ()=>{
-    return (
-        <div>
-            <h1>Members</h1>
-        </div>
-    );
-}
-
-const NotFound = ()=>{
-    return (
-        <div>
-            <h1>NotFound</h1>
-        </div>
-    );
-}
-
-const Test = ()=>{
-    return (
-
-            <Router>
-                <Routes>
-                    <Route path='*' element={ < NotFound/>}/>
-                    <Route path="/">
-                        <Route index element={ <Index/> } 
-                        
-                        />
-                        <Route path="home" element={ <Home/> } 
-                        
-                        />
-                        <Route path="member" element={ <Members/> }
-                            
-                        />
-                    </Route>
-                    
-                    
-                </Routes>
-            </Router>
-        
-    );
-}
-
-*/
-
 const Root = ReactDOM.createRoot( document.getElementById( 'root' ) );
 Root.render( <App/> );
 
