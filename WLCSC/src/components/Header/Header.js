@@ -16,7 +16,7 @@ const Header = ( props )=>{
 
 const Logo = ()=>{
     return (
-        <a className='Logo' href='#Start'>
+        <a className='Logo' href='/#Start'>
             <img src={LogoImage} alt='Logo'/>
             <span> WLCSC </span>
         </a>
