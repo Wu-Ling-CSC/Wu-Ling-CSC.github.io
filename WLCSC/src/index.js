@@ -309,7 +309,7 @@ const MembersContent = [
                 {
                     name:"Comet ☄️",
                     position:"PR",
-                    content:"NTHU PME/ Basketball player/ sports lover/ always have problem debugging",
+                    content:" NTHU PME / Basketball player / sports lover / always have problem debugging ",
                     img:member25_3,
                     contact:{
                         facebook: "https://www.facebook.com/gnein",
@@ -340,14 +340,14 @@ const MembersContent = [
             year:'27',
             members:[
                 {
-                    name:"123",
-                    position:"123",
-                    content:"123",
+                    name:"12345",
+                    position:"12345",
+                    content:"12345",
                     img:"",
                     contact:{
-                        facebook:"123",
-                        github:"123",
-                        instagram:"123",
+                        facebook:"12345",
+                        github:"12345",
+                        instagram:"12345",
                     }
                 },
             ],
@@ -427,14 +427,14 @@ const MembersContent = [
             year:'27',
             members:[
                 {
-                    name:"123",
-                    position:"123",
-                    content:"123",
+                    name:"12345",
+                    position:"12345",
+                    content:"12345",
                     img:"",
                     contact:{
-                        facebook:"123",
-                        github:"123",
-                        instagram:"123",
+                        facebook:"12345",
+                        github:"12345",
+                        instagram:"12345",
                     }
                 },
             ],
