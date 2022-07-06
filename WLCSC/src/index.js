@@ -32,8 +32,9 @@ import CyberImage from './images/encrypted.png';
 import LinuxImage from './images/linux.png';
 
 /*-- MembersPage Images --*/
-import member25_0 from './images/Members/25th-0.jpg';
-
+import member25_0 from './images/Members/25th-Jason.jpg';
+import member25_1 from './images/Members/25th-YoYo.png';
+import member25_2 from './images/Members/25th-CBC.png';
 
 /*-- component --*/
 import Header from './components/Header/Header';
@@ -266,6 +267,28 @@ const MembersContent = [
                         instagram:"https://www.instagram.com/jason2004424/",
                     }
                 },
+                {
+                    name:"Yoyo Lee",
+                    position:"Education",
+                    content:"NTU IM/ learning machine learning🥵/ Pro brawl star player",
+                    img:member25_1,
+                    contact:{
+                        facebook:"https://m.facebook.com/100004081721208/",
+                        github:"https://github.com/leeyoyo49",
+                        instagram:"https://instagram.com/yl.__49",
+                    }
+                },
+                {
+                    name:"Bing Cheng Chuang",
+                    position:"Education",
+                    content:"NTHU EECS / vim / sprout 2020 & 2021/ CS50w",
+                    img:member25_2,
+                    contact:{
+                        facebook: null,
+                        github:"https://github.com/tars3017",
+                        instagram:null,
+                    }
+                },
             ],
         },
         {
@@ -314,6 +337,28 @@ const MembersContent = [
                         facebook:"https://www.facebook.com/profile.php?id=100010981865378",
                         github:"https://github.com/jason810496",
                         instagram:"https://www.instagram.com/jason2004424/",
+                    },
+                },
+                {
+                    name:"李訓佑",
+                    position:"教學",
+                    content:"NTU IM / 沒有專長🥵/ 可能會一點點AI / 負責給社長電",
+                    img:member25_1,
+                    contact:{
+                        facebook:"https://m.facebook.com/100004081721208/",
+                        github:"https://github.com/leeyoyo49",
+                        instagram:"https://instagram.com/yl.__49",
+                    }
+                },
+                {
+                    name:"莊秉澂",
+                    position:"教學",
+                    content:" NTHU EECS  / vim超讚  / 只能寫出缺乏美感的網頁 / 掛名幹部",
+                    img:member25_2,
+                    contact:{
+                        facebook: null,
+                        github:"https://github.com/tars3017",
+                        instagram:null,
                     }
                 },
             ],
