@@ -251,6 +251,19 @@ const SocialLinksList = [
 
 */
 
+const MembersNavigation = [
+    [
+        {text:'25th' ,id:'25th'},
+        {text:'26th' ,id:'26th'},
+        {text:'27th' ,id:'27th'},
+    ],
+    [
+        {text:'25屆' ,id:'25th'},
+        {text:'26屆' ,id:'26th'},
+        {text:'27屆' ,id:'27th'},
+    ],
+];
+
 const MembersContent = [
     [
         {
@@ -448,12 +461,12 @@ class App extends React.Component {
     MembersPage = ()=>{
         return (
             <div className='MembersPage' >
-                <Header callback={ ()=>this.handleTheme() } navigation={ content[this.state.Lang].navigation } />
-                <SideBar navigation={ content[this.state.Lang].navigation }/>
+                <Header callback={ ()=>this.handleTheme() } navigation={ MembersNavigation[this.state.Lang] } />
+                <SideBar navigation={ MembersNavigation[this.state.Lang] }/>
                 <div className='Members'>
                     { MembersContent[this.state.Lang].map( ( club )=>( 
-                        <div className={ club.year+'th' }>
-                            <h1>{ club.year+'th' }</h1>
+                        <div className={ club.year+(this.state.Lang===0 ? 'th':'屆') } id={ club.year+'th' }>
+                            <h1>{ club.year+(this.state.Lang===0 ? 'th':'屆')  }</h1>
                             { club.members.map( ( ele )=>( < MemberCard person={ ele }/> ))}
                         </div>
                     )) }
