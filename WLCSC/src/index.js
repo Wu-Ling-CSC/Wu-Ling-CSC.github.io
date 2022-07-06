@@ -263,6 +263,41 @@ class App extends React.Component {
         else this.setState( {Lang : 1} );
     }
 
+    HomePage =() =>{
+        return (
+            <div>
+                <Header callback={ ()=>this.handleTheme() } navigation={ content[this.state.Lang].navigation } />
+                <SideBar navigation={ content[this.state.Lang].navigation }/>
+                <Main  
+                    // TextBackground
+                    typingSequence={ typingSequence }
+                    // About
+                    about={ content[this.state.Lang].about } 
+                    IntroImages={ content[this.state.Lang].IntroImages }
+                    // Advantage
+                    advantage={ content[this.state.Lang].advantage }
+                    // Course
+                    course={ content[this.state.Lang].course }
+                    // LinkedListBackround
+                    members={ content[this.state.Lang].members }  
+                />
+            </div>
+        );
+    }
+
+    MembersPage = ()=>{
+        return (
+            <div>
+                <Header callback={ ()=>this.handleTheme() } navigation={ content[this.state.Lang].navigation } />
+                <SideBar navigation={ content[this.state.Lang].navigation }/>
+            </div>
+        );
+    }
+
+    NotFoundPage = ()=>{
+        
+    }
+
     render(){
 
         return (
@@ -271,49 +306,16 @@ class App extends React.Component {
 
                 <Router>
                     <Routes>
-                        <Route path="/home" element={ ()=>(
-                        <div>
-                            <Header callback={ ()=>this.handleTheme() } navigation={ content[this.state.Lang].navigation } />
-                            <SideBar navigation={ content[this.state.Lang].navigation }/>
-                            <Main  
-                                // TextBackground
-                                typingSequence={ typingSequence }
-                                // About
-                                about={ content[this.state.Lang].about } 
-                                IntroImages={ content[this.state.Lang].IntroImages }
-                                // Advantage
-                                advantage={ content[this.state.Lang].advantage }
-                                // Course
-                                course={ content[this.state.Lang].course }
-                                // LinkedListBackround
-                                members={ content[this.state.Lang].members }  
-                            />
-                        </div>)}>
-                            {/* <Header callback={ ()=>this.handleTheme() } navigation={ content[this.state.Lang].navigation } />
-                            <SideBar navigation={ content[this.state.Lang].navigation }/>
-                            <Main  
-                                // TextBackground
-                                typingSequence={ typingSequence }
-                                // About
-                                about={ content[this.state.Lang].about } 
-                                IntroImages={ content[this.state.Lang].IntroImages }
-                                // Advantage
-                                advantage={ content[this.state.Lang].advantage }
-                                // Course
-                                course={ content[this.state.Lang].course }
-                                // LinkedListBackround
-                                members={ content[this.state.Lang].members }  
-                            /> */}
+                        <Route path='*' element={ < this.NotFoundPage/>}/>
+
+                        <Route path="/">
+                            <Route index element={ <this.HomePage/> } />
+                            <Route path="members" element={ <this.MembersPage/> } />
                         </Route>
-                        <Route path="/member" element={
-                            <div>
-                                {/* <Header callback={ ()=>this.handleTheme() } navigation={ content[this.state.Lang].navigation } /> */}
-                            </div>
-                        }>
-                            {/* <Header callback={ ()=>this.handleTheme() } navigation={ content[this.state.Lang].navigation } /> */}
-                        </Route>
+                        
                     </Routes>
                 </Router>
+
                 <Footer SocialLinksList={ SocialLinksList }/>
             </div>
             
@@ -379,7 +381,7 @@ const Test = ()=>{
 }
 
 const Root = ReactDOM.createRoot( document.getElementById( 'root' ) );
-Root.render( <Test/> );
+Root.render( <App/> );
 
 /*****************
     App :
