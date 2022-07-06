@@ -1182,6 +1182,7 @@ input:focus + .slider {
 
   margin-left: 10px;
   margin-right: 3px;
+  margin-bottom: 7px;
 }
 
 .Detail .yellow{
@@ -1192,6 +1193,7 @@ input:focus + .slider {
   display: inline-block;
 
   margin-right: 3px;
+  margin-bottom: 7px;
 }
 
 .Detail .green{
@@ -1202,6 +1204,7 @@ input:focus + .slider {
   display: inline-block;
 
   margin-right: 15px;
+  margin-bottom: 7px;
 }
 
 .Detail .Url{
