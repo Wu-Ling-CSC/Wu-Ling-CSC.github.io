@@ -1084,7 +1084,7 @@ input:focus + .slider {
 }
 .Members h1{
   font-size:40px;
-  margin-top: 20px;
+  margin-top: 40px;
   margin-bottom: 20px;
 }
 
@@ -1112,6 +1112,9 @@ input:focus + .slider {
   margin-left: 20px;
   margin-right: 20px;
   padding-bottom: 10px;
+
+  display: inline-block;
+  vertical-align: top;
 }
 .MemberCard img{
   margin-top: 20px;
@@ -1155,7 +1158,6 @@ input:focus + .slider {
 
 .Detail{
   width: 100%;
-  margin-top: 2px;
   margin-bottom: 2px;
   padding-top: 3px;
   padding-bottom: 3px;
@@ -1213,6 +1215,10 @@ input:focus + .slider {
   padding-right: 5px;
 
   display: inline-block;
+
+  overflow: hidden;
+  white-space: nowrap;
+
 }
 
 
