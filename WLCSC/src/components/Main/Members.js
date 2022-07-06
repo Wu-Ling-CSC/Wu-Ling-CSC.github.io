@@ -21,6 +21,7 @@ const MemberCard = ( props )=>{
                     { props.contact.facebook && <li ><a href={props.contact.facebook}><i className={'fa fa-facebook'}></i></a></li> }
                     { props.contact.github && <li ><a href={props.contact.github}><i className={'fa fa-github'}></i></a></li> }
                     { props.contact.instagram && <li ><a href={props.contact.instagram}><i className={'fa fa-instagram'}></i></a></li> }
+                    { props.contact.blog && <li ><a href={props.contact.blog}><i className={'fa fa-book'}></i></a></li> }
                 </ul>
                 
             </div>

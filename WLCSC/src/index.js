@@ -35,6 +35,7 @@ import LinuxImage from './images/linux.png';
 import member25_0 from './images/Members/25th-Jason.jpg';
 import member25_1 from './images/Members/25th-YoYo.png';
 import member25_2 from './images/Members/25th-CBC.png';
+import member25_3 from './images/Members/25th-Comet.png';
 
 /*-- component --*/
 import Header from './components/Header/Header';
@@ -278,6 +279,7 @@ const MembersContent = [
                         facebook:"https://www.facebook.com/profile.php?id=100010981865378",
                         github:"https://github.com/jason810496",
                         instagram:"https://www.instagram.com/jason2004424/",
+                        blog:"https://jason810496.github.io/blog",
                     }
                 },
                 {
@@ -289,6 +291,7 @@ const MembersContent = [
                         facebook:"https://m.facebook.com/100004081721208/",
                         github:"https://github.com/leeyoyo49",
                         instagram:"https://instagram.com/yl.__49",
+                        blog:null,
                     }
                 },
                 {
@@ -300,6 +303,19 @@ const MembersContent = [
                         facebook: null,
                         github:"https://github.com/tars3017",
                         instagram:null,
+                        blog:null,
+                    }
+                },
+                {
+                    name:"Comet ☄️",
+                    position:"PR",
+                    content:"NTHU PME/ Basketball player/ sports lover/ always have problem debugging",
+                    img:member25_3,
+                    contact:{
+                        facebook: "https://www.facebook.com/gnein",
+                        github:null,
+                        instagram:null,
+                        blog:"https://deaer92.students.media",
                     }
                 },
             ],
@@ -350,6 +366,7 @@ const MembersContent = [
                         facebook:"https://www.facebook.com/profile.php?id=100010981865378",
                         github:"https://github.com/jason810496",
                         instagram:"https://www.instagram.com/jason2004424/",
+                        blog:"https://jason810496.github.io/blog",
                     },
                 },
                 {
@@ -361,6 +378,7 @@ const MembersContent = [
                         facebook:"https://m.facebook.com/100004081721208/",
                         github:"https://github.com/leeyoyo49",
                         instagram:"https://instagram.com/yl.__49",
+                        blog:null,
                     }
                 },
                 {
@@ -372,6 +390,19 @@ const MembersContent = [
                         facebook: null,
                         github:"https://github.com/tars3017",
                         instagram:null,
+                        blog:null,
+                    }
+                },
+                {
+                    name:"慧心",
+                    position:"公關",
+                    content:"NTHU PME / 籃球員/ 通常擅長與資訊無關的事物/ 永遠跟coding 不合",
+                    img:member25_3,
+                    contact:{
+                        facebook: "https://www.facebook.com/gnein",
+                        github:null,
+                        instagram:null,
+                        blog:"https://deaer92.students.media",
                     }
                 },
             ],
