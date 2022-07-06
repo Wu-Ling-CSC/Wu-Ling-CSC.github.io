@@ -1,6 +1,13 @@
-
+// basic react package
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+// routing package
+import {
+    BrowserRouter as Router,
+    // HashRouter as Router,
+    Routes,
+    Route,
+} from 'react-router-dom';
 
 /*-- css ---*/
 import './index.css';
@@ -205,7 +212,7 @@ const content = [
                 },
             ],
         },
-        members:"看看有誰！",
+        members:"社團成員",
     },
 ]
 
@@ -260,32 +267,119 @@ class App extends React.Component {
 
         return (
             <div className={ ( this.state.IsDark===1? DARK:LIGHT )+'App'}>
-                <Header callback={ ()=>this.handleTheme() } navigation={ content[this.state.Lang].navigation } />
-                <SideBar navigation={ content[this.state.Lang].navigation }/>
                 <Language callback={ ()=>this.handleLang() } />
-                <Main  
-                    // TextBackground
-                    typingSequence={ typingSequence }
-                    // About
-                    about={ content[this.state.Lang].about } 
-                    IntroImages={ content[this.state.Lang].IntroImages }
-                    // Advantage
-                    advantage={ content[this.state.Lang].advantage }
-                    // Course
-                    course={ content[this.state.Lang].course }
-                    // LinkedListBackround
-                    members={ content[this.state.Lang].members }
-                    
-                />
+
+                <Router>
+                    <Routes>
+                        <Route path="/home" element={ ()=>(
+                        <div>
+                            <Header callback={ ()=>this.handleTheme() } navigation={ content[this.state.Lang].navigation } />
+                            <SideBar navigation={ content[this.state.Lang].navigation }/>
+                            <Main  
+                                // TextBackground
+                                typingSequence={ typingSequence }
+                                // About
+                                about={ content[this.state.Lang].about } 
+                                IntroImages={ content[this.state.Lang].IntroImages }
+                                // Advantage
+                                advantage={ content[this.state.Lang].advantage }
+                                // Course
+                                course={ content[this.state.Lang].course }
+                                // LinkedListBackround
+                                members={ content[this.state.Lang].members }  
+                            />
+                        </div>)}>
+                            {/* <Header callback={ ()=>this.handleTheme() } navigation={ content[this.state.Lang].navigation } />
+                            <SideBar navigation={ content[this.state.Lang].navigation }/>
+                            <Main  
+                                // TextBackground
+                                typingSequence={ typingSequence }
+                                // About
+                                about={ content[this.state.Lang].about } 
+                                IntroImages={ content[this.state.Lang].IntroImages }
+                                // Advantage
+                                advantage={ content[this.state.Lang].advantage }
+                                // Course
+                                course={ content[this.state.Lang].course }
+                                // LinkedListBackround
+                                members={ content[this.state.Lang].members }  
+                            /> */}
+                        </Route>
+                        <Route path="/member" element={
+                            <div>
+                                {/* <Header callback={ ()=>this.handleTheme() } navigation={ content[this.state.Lang].navigation } /> */}
+                            </div>
+                        }>
+                            {/* <Header callback={ ()=>this.handleTheme() } navigation={ content[this.state.Lang].navigation } /> */}
+                        </Route>
+                    </Routes>
+                </Router>
                 <Footer SocialLinksList={ SocialLinksList }/>
             </div>
+            
         );
     }
 }
 
+const Index = ()=>{
+    return (
+        <div>
+            <h1>Index</h1>
+        </div>
+    );   
+}
+
+const Home = ()=>{
+    return (
+        <div>
+            <h1>Home</h1>
+        </div>
+    );   
+}
+
+const Members = ()=>{
+    return (
+        <div>
+            <h1>Members</h1>
+        </div>
+    );
+}
+
+const NotFound = ()=>{
+    return (
+        <div>
+            <h1>NotFound</h1>
+        </div>
+    );
+}
+
+const Test = ()=>{
+    return (
+
+            <Router>
+                <Routes>
+                    <Route path='*' element={ < NotFound/>}/>
+                    <Route path="/">
+                        <Route index element={ <Index/> } 
+                        
+                        />
+                        <Route path="home" element={ <Home/> } 
+                        
+                        />
+                        <Route path="member" element={ <Members/> }
+                            
+                        />
+                    </Route>
+                    
+                    
+                </Routes>
+            </Router>
+        
+    );
+}
 
 const Root = ReactDOM.createRoot( document.getElementById( 'root' ) );
-Root.render( <App/> );
+Root.render( <Test/> );
 
 /*****************
     App :
