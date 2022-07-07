@@ -33,12 +33,20 @@ import CyberImage from './images/encrypted.png';
 import LinuxImage from './images/linux.png';
 
 /*-- MembersPage Images --*/
+// 25th
 import member25_Jason from './images/Members/25th-Jason.jpg';
 import member25_YoYo from './images/Members/25th-YoYo.png';
 import member25_CBC from './images/Members/25th-CBC.png';
 import member25_Comet from './images/Members/25th-Comet.png';
 import member25_SF from './images/Members/25th-SF.png';
 import member25_Carl from './images/Members/25th-Carl.jpg';
+
+//26th
+
+
+//27th
+import member27_Gary from './images/Members/27th-Gary.png';
+
 
 /*-- component --*/
 import Header from './components/Header/Header';
@@ -367,6 +375,18 @@ const MembersContent = [
             year:'27',
             members:[
                 {
+                    name:"Gary Tsai",
+                    position:"Vice Director",
+                    content:"ethical hacker/basic algorithm/volley ball/anime(´≖◞౪◟≖)/I love Mayday",
+                    img:member27_Gary,
+                    contact:{
+                        facebook: null,
+                        github:null,
+                        instagram:"https://www.instagram.com/garytsai1130",
+                        blog:null,
+                    }
+                },
+                {
                     name:"12345",
                     position:"12345",
                     content:"12345",
@@ -478,6 +498,18 @@ const MembersContent = [
         {
             year:'27',
             members:[
+                {
+                    name:"阿毅",
+                    position:"副社長",
+                    content:"駭不進欣河系統/還在學程競/APEX身法猴/看到這裡是不是想加入酷酷的資研呢？",
+                    img:member27_Gary,
+                    contact:{
+                        facebook: null,
+                        github:null,
+                        instagram:"https://www.instagram.com/garytsai1130",
+                        blog:null,
+                    }
+                },
                 {
                     name:"12345",
                     position:"12345",
