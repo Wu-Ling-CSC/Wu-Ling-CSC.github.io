@@ -33,10 +33,12 @@ import CyberImage from './images/encrypted.png';
 import LinuxImage from './images/linux.png';
 
 /*-- MembersPage Images --*/
-import member25_0 from './images/Members/25th-Jason.jpg';
-import member25_1 from './images/Members/25th-YoYo.png';
-import member25_2 from './images/Members/25th-CBC.png';
-import member25_3 from './images/Members/25th-Comet.png';
+import member25_Jason from './images/Members/25th-Jason.jpg';
+import member25_YoYo from './images/Members/25th-YoYo.png';
+import member25_CBC from './images/Members/25th-CBC.png';
+import member25_Comet from './images/Members/25th-Comet.png';
+import member25_SF from './images/Members/25th-SF.png';
+import member25_Carl from './images/Members/25th-Carl.jpg';
 
 /*-- component --*/
 import Header from './components/Header/Header';
@@ -275,7 +277,7 @@ const MembersContent = [
                     name:"Jason Liu",
                     position:"Director",
                     content:"NCKU CSIE / Algorithm / Full stack / I'm weak > < / Still learing ...",
-                    img:member25_0,
+                    img:member25_Jason,
                     contact:{
                         facebook:"https://www.facebook.com/profile.php?id=100010981865378",
                         github:"https://github.com/jason810496",
@@ -287,7 +289,7 @@ const MembersContent = [
                     name:"Yoyo Lee",
                     position:"Education",
                     content:"NTU IM/ learning machine learning🥵/ Pro brawl star player",
-                    img:member25_1,
+                    img:member25_YoYo,
                     contact:{
                         facebook:"https://m.facebook.com/100004081721208/",
                         github:"https://github.com/leeyoyo49",
@@ -299,7 +301,7 @@ const MembersContent = [
                     name:"Bing Cheng Chuang",
                     position:"Education",
                     content:"NTHU EECS / vim / sprout 2020 & 2021/ CS50w",
-                    img:member25_2,
+                    img:member25_CBC,
                     contact:{
                         facebook: null,
                         github:"https://github.com/tars3017",
@@ -308,15 +310,39 @@ const MembersContent = [
                     }
                 },
                 {
+                    name:"SF",
+                    position:"Education",
+                    content:"NTNU CSIE / AI / App Designer / learning Java",
+                    img:member25_SF,
+                    contact:{
+                        facebook: "https://www.facebook.com/snowflake111192",
+                        github:"https://github.com/snowflake1111",
+                        instagram:"https://www.instagram.com/snowflake111192",
+                        blog:null,
+                    }
+                },
+                {
                     name:"Comet ☄️",
                     position:"PR",
                     content:" NTHU PME / Basketball player / sports lover / always have problem debugging ",
-                    img:member25_3,
+                    img:member25_Comet,
                     contact:{
                         facebook: "https://www.facebook.com/gnein",
                         github:null,
                         instagram:null,
                         blog:"https://deaer92.students.media",
+                    }
+                },
+                {
+                    name:"Wardaddy",
+                    position:"Art Designing",
+                    content:"PKU AM / The Man Who Sold the World ",
+                    img:member25_Carl,
+                    contact:{
+                        facebook: "https://www.facebook.com/profile.php?id=100011166154971",
+                        github:null,
+                        instagram:"https://instagram.com/carl_vladimir_colier",
+                        blog:null,
                     }
                 },
             ],
@@ -362,7 +388,7 @@ const MembersContent = [
                     name:"大牛",
                     position:"社長",
                     content:"NCKU CSIE / 程競 / 全端 / 我超弱 /負責雜耍/程競好難所以來弄網頁？",
-                    img:member25_0,
+                    img:member25_Jason,
                     contact:{
                         facebook:"https://www.facebook.com/profile.php?id=100010981865378",
                         github:"https://github.com/jason810496",
@@ -374,7 +400,7 @@ const MembersContent = [
                     name:"李訓佑",
                     position:"教學",
                     content:"NTU IM / 沒有專長🥵/ 可能會一點點AI / 負責給社長電",
-                    img:member25_1,
+                    img:member25_YoYo,
                     contact:{
                         facebook:"https://m.facebook.com/100004081721208/",
                         github:"https://github.com/leeyoyo49",
@@ -386,7 +412,7 @@ const MembersContent = [
                     name:"莊秉澂",
                     position:"教學",
                     content:" NTHU EECS  / vim超讚  / 只能寫出缺乏美感的網頁 / 掛名幹部",
-                    img:member25_2,
+                    img:member25_CBC,
                     contact:{
                         facebook: null,
                         github:"https://github.com/tars3017",
@@ -395,10 +421,22 @@ const MembersContent = [
                     }
                 },
                 {
+                    name:"阿卉",
+                    position:"教學",
+                    content:"NTNU CSIE / 人工智慧 / APP設計者 / 正在學Java",
+                    img:member25_SF,
+                    contact:{
+                        facebook: "https://www.facebook.com/snowflake111192",
+                        github:"https://github.com/snowflake1111",
+                        instagram:"https://www.instagram.com/snowflake111192",
+                        blog:null,
+                    }
+                },
+                {
                     name:"慧心",
                     position:"公關",
                     content:"NTHU PME / 籃球員/ 通常擅長與資訊無關的事物/ 永遠跟coding 不合",
-                    img:member25_3,
+                    img:member25_Comet,
                     contact:{
                         facebook: "https://www.facebook.com/gnein",
                         github:null,
@@ -406,6 +444,19 @@ const MembersContent = [
                         blog:"https://deaer92.students.media",
                     }
                 },
+                {
+                    name:"老爹",
+                    position:"美編",
+                    content:"PKU AM / MC 10年老玩家 / 硬體 / 業餘電競 /  革命家",
+                    img:member25_Carl,
+                    contact:{
+                        facebook: "https://www.facebook.com/profile.php?id=100011166154971",
+                        github:null,
+                        instagram:"https://instagram.com/carl_vladimir_colier",
+                        blog:null,
+                    }
+                },
+                
             ],
         },
         {
