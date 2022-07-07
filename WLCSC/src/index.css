@@ -1096,17 +1096,33 @@ input:focus + .slider {
 .Members{
   padding-top:100px;
   text-align: center;
+  padding-bottom:50px;
+}
+
+
+@media all and (min-width:600px){
+  .MemberCard{
+    transform: scale(1.2);
+    margin-top: 50px;
+    margin-bottom: 80px;
+    margin-left: 70px;
+    margin-right: 70px;
+  }
+}
+@media all and (max-width:599px){
+  .MemberCard{
+    transform: scale(1);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 }
 
 .MemberCard{
   height: 400px;
   width: 270px;
   border-radius: 20px;
-
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-left: 20px;
-  margin-right: 20px;
   padding-bottom: 10px;
 
   display: inline-block;
