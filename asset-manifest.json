@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.b3d42ae5.css",
+    "main.css": "/static/css/main.88d000a1.css",
     "main.js": "/static/js/main.d4c5d734.js",
     "static/media/25th-SF.png": "/static/media/25th-SF.7a7004f834795bd684fe.png",
     "static/media/25th-YoYo.png": "/static/media/25th-YoYo.22edee6c7bf6d3a9699a.png",
@@ -20,11 +20,11 @@
     "static/media/artificial-intelligence.png": "/static/media/artificial-intelligence.0d076b64fab39aa45937.png",
     "static/media/encrypted.png": "/static/media/encrypted.7aadea64e6e9e6951098.png",
     "index.html": "/index.html",
-    "main.b3d42ae5.css.map": "/static/css/main.b3d42ae5.css.map",
+    "main.88d000a1.css.map": "/static/css/main.88d000a1.css.map",
     "main.d4c5d734.js.map": "/static/js/main.d4c5d734.js.map"
   },
   "entrypoints": [
-    "static/css/main.b3d42ae5.css",
+    "static/css/main.88d000a1.css",
     "static/js/main.d4c5d734.js"
   ]
 }
