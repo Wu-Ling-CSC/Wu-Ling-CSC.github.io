@@ -575,7 +575,7 @@ class App extends React.Component {
 
     MembersPage = ()=>{
         return (
-            <div className='MembersPage' >
+            <div >
                 <Header callback={ ()=>this.handleTheme() } navigation={ MembersNavigation[this.state.Lang] } />
                 <SideBar navigation={ MembersNavigation[this.state.Lang] }/>
                 <div className='Members'>

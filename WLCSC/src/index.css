@@ -1078,10 +1078,6 @@ input:focus + .slider {
 }
 
 
-/* MembersPage */
-.Members{
-  padding-bottom: 50px;
-}
 .Members h1{
   font-size:40px;
   margin-top: 40px;
