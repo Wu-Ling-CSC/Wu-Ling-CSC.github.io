@@ -93,7 +93,7 @@ html{
 .Dark .SideBarGroup{
   background-color: rgb(120, 120, 120);
 }
-.Dark .SideBar a{
+.Dark .SideBar {
   color: #fff;
 }
 
@@ -147,11 +147,11 @@ html{
   text-decoration: none;
 }
 
-.Dark .button-top a{
+.Dark .button-top {
   color: #fff;
 }
 
-.Light .button-top a{
+.Light .button-top {
   color: #000;
 }
 

@@ -109,7 +109,7 @@ class LinkedListBackground extends React.Component {
     render(){
         return (
             <div className="LinkedListBackground" id='Members'>
-                <a href='/members'><h1>{ this.props.members} </h1></a>
+                <a href='/#/members'><h1>{ this.props.members} </h1></a>
                 <Sketch setup={this.setup} draw={this.draw} />
             </div>
         );

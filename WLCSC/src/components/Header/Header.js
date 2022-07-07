@@ -16,7 +16,7 @@ const Header = ( props )=>{
 
 const Logo = ()=>{
     return (
-        <a className='Logo' href='/#Start'>
+        <a className='Logo' href='/#'>
             <img src={LogoImage} alt='Logo'/>
             <span> WLCSC </span>
         </a>
@@ -34,7 +34,11 @@ const Buttons = (props) => {
 
 const Button = ( props )=>{
     return (
-         <div className={"button-top"} ><a href={ '#'+props.id }>{ props.text }</a></div>
+        <div className={"button-top"} onClick={
+            ()=>{
+               document.getElementById(props.id).scrollIntoView({ behavior: 'smooth' });
+            }
+        }>{ props.text }</div>
     );
  };
 

@@ -3,8 +3,9 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 // routing package
 import {
-    BrowserRouter as Router,
-    // HashRouter as Router,
+    // StaticRouter as Router,
+    // BrowserRouter as Router,
+    HashRouter as Router,
     Routes,
     Route,
 } from 'react-router-dom';
