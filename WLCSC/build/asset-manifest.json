@@ -1,8 +1,11 @@
 {
   "files": {
-    "main.css": "/static/css/main.cc415f5b.css",
-    "main.js": "/static/js/main.23b4b774.js",
+    "main.css": "/static/css/main.40a4d40c.css",
+    "main.js": "/static/js/main.2838f502.js",
+    "static/media/25th-YoYo.png": "/static/media/25th-YoYo.22edee6c7bf6d3a9699a.png",
+    "static/media/25th-CBC.png": "/static/media/25th-CBC.658d9ac0998b73b923e6.png",
     "static/media/rocket.gif": "/static/media/rocket.40329a34c4c138180450.gif",
+    "static/media/25th-Comet.png": "/static/media/25th-Comet.7b7e7179b7ac4e8744c4.png",
     "static/media/hacker.gif": "/static/media/hacker.1c958506512b997b8ecb.gif",
     "static/media/social-care.gif": "/static/media/social-care.0e0be23e6d9c942f7083.gif",
     "static/media/Logo.png": "/static/media/Logo.696be5f39f8d5bade961.png",
@@ -10,14 +13,15 @@
     "static/media/Group.jpg": "/static/media/Group.b232268a8d94e1c5f76d.jpg",
     "static/media/Back.jpg": "/static/media/Back.2deb1e00dc5283aac3a0.jpg",
     "static/media/Location.png": "/static/media/Location.28c037c5e19892439cbd.png",
+    "static/media/25th-Jason.jpg": "/static/media/25th-Jason.18013252acb097883879.jpg",
     "static/media/artificial-intelligence.png": "/static/media/artificial-intelligence.0d076b64fab39aa45937.png",
     "static/media/encrypted.png": "/static/media/encrypted.7aadea64e6e9e6951098.png",
     "index.html": "/index.html",
-    "main.cc415f5b.css.map": "/static/css/main.cc415f5b.css.map",
-    "main.23b4b774.js.map": "/static/js/main.23b4b774.js.map"
+    "main.40a4d40c.css.map": "/static/css/main.40a4d40c.css.map",
+    "main.2838f502.js.map": "/static/js/main.2838f502.js.map"
   },
   "entrypoints": [
-    "static/css/main.cc415f5b.css",
-    "static/js/main.23b4b774.js"
+    "static/css/main.40a4d40c.css",
+    "static/js/main.2838f502.js"
   ]
 }
