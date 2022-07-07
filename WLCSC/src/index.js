@@ -40,7 +40,8 @@ import member25_CBC from './images/Members/25th-CBC.png';
 import member25_Comet from './images/Members/25th-Comet.png';
 import member25_SF from './images/Members/25th-SF.png';
 import member25_Carl from './images/Members/25th-Carl.jpg';
-
+import member25_BlackTea from './images/Members/25th-BlackTea.png';
+import member25_Hollowha from './images/Members/25th-Hollowha.jpg';
 //26th
 
 
@@ -294,6 +295,18 @@ const MembersContent = [
                     }
                 },
                 {
+                    name:"Hollowha",
+                    position:"Vice Director",
+                    content:" 💩/ Trying to create mobile game recently/ Typing speed is like a 💩",
+                    img:member25_Hollowha,
+                    contact:{
+                        facebook:"https://www.facebook.com/ha.hollowha.ha",
+                        github:null,
+                        instagram:"https://www.instagram.com/catfish.hollowha/",
+                        blog:null,
+                    }
+                },
+                {
                     name:"Yoyo Lee",
                     position:"Education",
                     content:"NTU IM/ learning machine learning🥵/ Pro brawl star player",
@@ -326,6 +339,18 @@ const MembersContent = [
                         facebook: "https://www.facebook.com/snowflake111192",
                         github:"https://github.com/snowflake1111",
                         instagram:"https://www.instagram.com/snowflake111192",
+                        blog:null,
+                    }
+                },
+                {
+                    name:"BlackTea",
+                    position:"Education",
+                    content:"NTU CSIE / Noob / Enjoy learning new stuff / Nerd",
+                    img:member25_BlackTea,
+                    contact:{
+                        facebook:null,
+                        github:null,
+                        instagram:"https://www.instagram.com/black.teeeea/",
                         blog:null,
                     }
                 },
@@ -417,6 +442,18 @@ const MembersContent = [
                     },
                 },
                 {
+                    name:"余欣慰",
+                    position:"副社長",
+                    content:"💩 / 最近在嘗試開發手游/ 打字速度跟💩一樣",
+                    img:member25_Hollowha,
+                    contact:{
+                        facebook:"https://www.facebook.com/ha.hollowha.ha",
+                        github:null,
+                        instagram:"https://www.instagram.com/catfish.hollowha/",
+                        blog:null,
+                    }
+                },
+                {
                     name:"李訓佑",
                     position:"教學",
                     content:"NTU IM / 沒有專長🥵/ 可能會一點點AI / 負責給社長電",
@@ -449,6 +486,18 @@ const MembersContent = [
                         facebook: "https://www.facebook.com/snowflake111192",
                         github:"https://github.com/snowflake1111",
                         instagram:"https://www.instagram.com/snowflake111192",
+                        blog:null,
+                    }
+                },
+                {
+                    name:"紅茶",
+                    position:"教學",
+                    content:"NTU CSIE / 新手擔當 / 學習新事物 / 只會讀書(X",
+                    img:member25_BlackTea,
+                    contact:{
+                        facebook:null,
+                        github:null,
+                        instagram:"https://www.instagram.com/black.teeeea/",
                         blog:null,
                     }
                 },
