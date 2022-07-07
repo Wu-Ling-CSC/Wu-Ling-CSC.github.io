@@ -357,6 +357,8 @@ html{
   .slider:before{
     height: 23px;
     width: 23px;
+
+    box-shadow: 2px 0px 2px 1px rgb(80, 80, 80);
   }
 }
 /* pad */
@@ -364,16 +366,11 @@ html{
   .slider:before{
     height: 12px;
     width: 12px;
+
+    box-shadow: 1px 0px 2px 1px rgb(80, 80, 80);
   }
 }
 
-.Dark .slider:before{
-  box-shadow:  2px 0px 3px 3px #934019;
-}
-
-.Light .slider::before{
-  box-shadow:  -2px 0px 3px 3px #585756;
-}
 
 input:checked + .slider {
   background-color: #6a6969;
