@@ -1,4 +1,4 @@
-// basic react package
+ // basic react package
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 // routing package
@@ -47,6 +47,7 @@ import member25_Hollowha from './images/Members/25th-Hollowha.jpg';
 
 //27th
 import member27_Gary from './images/Members/27th-Gary.png';
+import member27_Lun from './images/Members/27th-Lun.jpg';
 
 
 /*-- component --*/
@@ -408,6 +409,18 @@ const MembersContent = [
                         facebook: null,
                         github:null,
                         instagram:"https://www.instagram.com/garytsai1130",
+                        blog:null,
+                    }
+                },
+                {
+                    name:"Lun",
+                    position:"Education",
+                    content:"Unity/Arduino/Arch(based) Linux/Site creating/cyber secure",
+                    img:member27_Lun,
+                    contact:{
+                        facebook: "https://www.facebook.com/profile.php?id=100012668715619",
+                        github:"https://github.com/creaper9487",
+                        instagram:null,
                         blog:null,
                     }
                 },
