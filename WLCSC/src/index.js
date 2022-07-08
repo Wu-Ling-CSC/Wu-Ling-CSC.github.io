@@ -134,7 +134,7 @@ const content = [
                 { 
                     title:'Cyber Security',
                     icon:CyberImage,
-                    subtitle:'Learn Web Application Exploitation by solving CTF and look into common web attacks .',
+                    subtitle:'Learn Web Application Exploitation by solving CTF and looking into common web attacks .',
                 },
                 { 
                     title:'Mechine Learing',
