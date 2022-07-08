@@ -578,8 +578,8 @@ const MembersContent = [
                     content:"Unity/Arduino/Arch(based) Linux btw/架站/資安/要不要移民到Linux啊",
                     img:"",
                     contact:{
-                        facebook:"12345",
-                        github:"12345",
+                        facebook: "https://www.facebook.com/profile.php?id=100012668715619",
+                        github:"https://github.com/creaper9487",
                         instagram:"12345",
                     }
                 },
