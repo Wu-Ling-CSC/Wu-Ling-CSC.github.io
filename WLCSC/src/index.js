@@ -105,7 +105,7 @@ const content = [
                 { 
                     title:'Start coding from senior high',
                     icon:RocketImage,
-                    subtitle:'Start your journey of of becoming an expert in computer science at the age of 16! While your friends are still playing Brawl Stars, you are already building your own AI model to play that garbage game.',
+                    subtitle:'Start your journey of becoming an expert in computer science at the age of 16! While your friends are still playing Brawl Stars, you are already building your own AI model to play that garbage game.',
                 },
                 { 
                     title:'Get experience from seniors',
@@ -135,7 +135,7 @@ const content = [
                 { 
                     title:'Cyber Security',
                     icon:CyberImage,
-                    subtitle:'Learn Web Application Exploitation by solving CTF and look into common web attacks .',
+                    subtitle:'Learn Web Application Exploitation by solving CTF and looking into common web attacks .',
                 },
                 { 
                     title:'Mechine Learing',
