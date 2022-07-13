@@ -1,4 +1,4 @@
-// basic react package
+ // basic react package
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 // routing package
@@ -47,6 +47,7 @@ import member25_Hollowha from './images/Members/25th-Hollowha.jpg';
 
 //27th
 import member27_Gary from './images/Members/27th-Gary.png';
+import member27_Lun from './images/Members/27th-Lun.jpg';
 
 
 /*-- component --*/
@@ -412,6 +413,18 @@ const MembersContent = [
                     }
                 },
                 {
+                    name:"Lun",
+                    position:"Education",
+                    content:"Unity/Arduino/Arch(based) Linux btw/Site creating/cyber secure/Would you like to try Linux?",
+                    img:member27_Lun,
+                    contact:{
+                        facebook: "https://www.facebook.com/profile.php?id=100012668715619",
+                        github:"https://github.com/creaper9487",
+                        instagram:null,
+                        blog:null,
+                    }
+                },
+                {
                     name:"12345",
                     position:"12345",
                     content:"12345",
@@ -557,6 +570,17 @@ const MembersContent = [
                         github:null,
                         instagram:"https://www.instagram.com/garytsai1130",
                         blog:null,
+                    }
+                },
+                {
+                    name:"謝倫",
+                    position:"教學",
+                    content:"Unity/Arduino/Arch(based) Linux btw/架站/資安/要不要移民到Linux啊",
+                    img:"",
+                    contact:{
+                        facebook: "https://www.facebook.com/profile.php?id=100012668715619",
+                        github:"https://github.com/creaper9487",
+                        instagram:"12345",
                     }
                 },
                 {
