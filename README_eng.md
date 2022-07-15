@@ -1,4 +1,4 @@
-<h4 align="center"><a href="https://github.com/jason810496/WLCSC/blob/master/README.md">中文</a></h4>
+<h4 align="center"><a href="https://github.com/Wu-Ling-CSC/Wu-Ling-CSC.github.io/blob/main/README.md">中文</a></h4>
 
 # WLCSC Website
 
