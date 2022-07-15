@@ -1,100 +1,104 @@
-<h4 align="center"><a href="https://github.com/jason810496/WLCSC/blob/master/README_zh.md">中文</a></h4>
+<h4 align="center"><a href="https://github.com/jason810496/WLCSC/blob/master/README.md">English</a></h4>
 
-# WLCSC Website
+# 武陵資研網站
 
-- [Official Website of Wuling Computer Science Club](#official-website-of-wuling-computer-science-club)
-- [Improve club website](#improve-club-website)
-- [Development & Deployment](#development--deployment)
-- [App content](#app-content)
-- [App structure](#app-structure)
-    - [Directory structure](#directory-structure)
-    - [Components](#components)
+- [武陵高中資訊研究社官方網站](#武陵高中資訊研究社官方網站)
+- [改善社網](#改善社網)
+- [開發測試 & 部署](#開發測試--部署)
+- [網站內容](#網站內容)
+- [App 架構](#app-架構)
+    - [目錄架構](#目錄架構)
+    - [主要元件](#主要元件)
         - [App](#app)
         - [HomePage](#homepage)
         - [MembersPage](#memberpage)
-        - [Other basic components](#other-basic-components)
+        - [其他基本元件](#其他基本元件)
     - [Routing](#routing)
-    - [Animation](#animation)
+    - [動畫](#動畫)
 
-## Official Website of Wuling Computer Science Club
 
-A static website builded in [React](https://reactjs.org/)
+## 武陵高中資訊研究社官方網站
+
+一個用 [React](https://reactjs.org/) 寫的靜態網站
 
 **Why React ?**
-- Reuseable:
-    React components are reusebale , for instance : Footer , Header ，or the Profile cards on Members Page 。 Once you write the templates of the components ，you could take data as input of components and render them on page.
+- 重複利用:
+    React 元件可以重複利用，如每個頁面的 Footer , Header ，或是成員頁面的 Profile cards 。 只需要寫出元件的模板，就可以將資料帶入並 render 在頁面上
 
-- Mainstream:
-    `React` 與 `Vue` are the most popular front-end framwork ，which could increase development efficiency and maintainability 
+- 主流:
+    `React` 與 `Vue` 為目前最主流的前端開發框架，可以增加開發效率和維護性 
 
-## Improve club website
+## 改善社網
 
-**Requirement：**
-- git & github ( know how to Pull Request )
+**技能要求：**
+- git & github ( 會發 PR 即可 )
 - basic JS
 - React class component
 - React function component 
-- CSS ( If you want to change the style  )
-
+- CSS ( 如果想要改網頁樣式的話 )
 
 **Todo：**
-- [ ] Finish `PageNotFound` components
-    `PageNotFound`component is defined in `App` component in `index.js`.
-- [ ] Organize CSS
-    The current CSS styling are all written in one file ， which can be consider written in Object Oriented CSS
+- [ ] 完成 `PageNotFound` 元件
+    目前 `PageNotFound`元件定義在`index.js`的`App`元件中
+- [ ] 整理 CSS
+    目前所有的 CSS 都寫在通一個檔案 ，可以考慮寫成 Object Oriented CSS
 
-- [ ] Optimize RWD
-    Makes CSS breakpoint better
+- [ ] 優化 RWD
+    把 CSS breakpoint 改好一點
 
-- [ ] Add new Pages（ Route ） 
-    Eg: Add a page about courses , introduce more detail
+- [ ] 增加新的頁面（ Route ） 
+    Eg: 可以增加關於課程的頁面，介紹更詳細的內容
 
-## Development & Deployment
-( the following command are run in terminal )
 
-**prerequisites:**
+## 開發測試 & 部署
+（ 以下指令都是在終端機執行 ）
 
-install `npm` , enter `.../src/` directory and run `npm install` .
+**前提：**
 
-**Commands:**
+ 安裝好 `npm` ， 並進入 `.../src/` 這個目錄執行 `npm install` 使令
 
-Start the development server
+**指令：**
+
+
+在 local 啟動 App
 ```sh
 npm run start
 ```
-For deployment( the script will automatically build current app and deploy it onto Github  . Wait about 1 minute and you will see new version of website is online )
+部署當前 App ( 這會自動 build 當前的 App , 並部屬到 Github ， 過約一分鐘就可以看到新版本上線了 )
 ```sh
 npm run deploy
 ```
 
-### App Content
+## 網站內容
 
-All of the website content ( including images ) were written variables that are `cosnt` type in the beginning of **`index.js`** ( If you merely want to change the content of website , just modify the varibles above , those variable are `Dictionary` type and named by relative positon of website )
+網站的所有內容（包括圖片）都寫在 `index.js` 最上方型態為 `const` 的變數中 （ 所以要單純修改網站內容時，只需要修改最上方的變數內容即可，並且內容都是 `Dictionary` 格式，根據在網頁的相對區塊命名 ）
 
-**Home page :**
+**首頁：**
 
-The content of Home page are stored in `content` array ( located at `line 70` ) `content[0]` is English content , `content[1]` is Chinese content ( the switching mechanism will be describe in `App` component section )
+首頁的內容都在 `content` array 中 ( 約在`line 70` )
+`content[0]`是英語內容，`content[1]`是中文內容（ 切換機制會在說明 `App` 元件時提到 ）
 
-**Members page :**
+**成員頁面：**
 
-The content of Members page are stored in `Memberscontent` array ( located at `line 280` ) `Memberscontent[0]` is English content , `Memberscontent[1]` is Chinese content ( the switching mechanism is same as `App` component )
+社團成員頁面都在 `MembersContent` array 中 ( 約在`line 280` )`MembersContent[0]`是英語內容，`MembersContent[1]`是中文內容（ 切換機制與`App` 元件相同 ）
 
-**Footer :**
+**頁尾：**
 
-The social links in Footer section are store in `SocialLinkList` ( located at `line 240` )
+Footer 中的站外連結都寫在 `SocialLinkList` 中 （ 約在`line 240` ）
 
-**Typing effect :**
+**打字機：**
 
-The words of typing effect in the beginning of home page are stored in `typingSequence` array , moreover , the element should be a pair of string and interger( the span of time in ms )
+在首頁最上方的打字機效果內容在 `typingSequence` array 中，並且是一個字串與它的間隔時間 (ms) 為一組
 ```js
 // Typing effect in the beginning
 const typingSequence = ['WLCSC', 3000, 'Wu Ling',3000,'Computer Science',3000,'Algorithm',3000,'Cyber Security',3000,'Web Development',3000,''];
 ```
 
-## App structure 
 
-### Directory structure
 
+## App 架構
+
+### 目錄架構
 
 ```
 /src.
@@ -142,22 +146,22 @@ const typingSequence = ['WLCSC', 3000, 'Wu Ling',3000,'Computer Science',3000,'A
 └── index.js
 
 ```
-
 - `index.js` : 
-    The top structure of Application , include all sors of the main components , and store the content of website .
+    是 App 最上層的結構，負責將網站內容的大元件引入，同時也是撰寫所有文字內容的檔案。
 
-- `index.css` : 
-    CSS file of website  , haven't splitted by components .
+- `index.css` :
+    網頁 CSS 的檔案，目前還沒依照元件分寫
 
-### Components 
+### 主要元件
 
-#### App 
-
-`App` is the component that control **Theme** , **Language** and **Routing** . If you want to modity its structure , please read `React Class Component`,`React State` and `React Route` at first .
+這邊列出最主要的幾個大元件
 
 
+#### App
 
-The following is structure of `App` component ： 
+`App`元件是本網頁中控制**主題**、**語言**和負責 **Routing** 的元件，在修改架構前請先了解 `React Class Component`,`React State` 和 `React Route` 。
+
+`App` 元件架構如下 ： 
 ```js
 class App extends React.Component {
     constructor ( props ){
@@ -200,22 +204,20 @@ class App extends React.Component {
 }
 ```
 
-**Feature :**
-1. **Switch Theme :**
+**功能：**
+1. **切換主題**：
 
-    Switch the state by `IsDark` properity of `state` , and add CSS ( change the className of  the outest div to `Dark` or `Light` and setup CSS rule , for example :  setup `.Dark .obj{ ... }` or `.Light .obj{ ... }` to achieve theme toggler )
+    主要透過 `state` 中的 `IsDark` 來切換 ， 並搭配 CSS （ 透過將最外層的 div 的 className 設定為 `Dark` 或 `Light` ， 就可以透過 CSS 來達到切換主題的效果： 如 `.Dark .obj{ ... }` 或 `.Light .obj{ ... }` ）
+2. **切換語言**：
 
-2. **Switch Language :**
+    可以注意到 `state` 中的 `Lang` 是在 `0` 與 `1` 做變換 ， 再搭配 `content` array（  存所有網頁內容的 array , `content[0]` 是英文內容 ， `content[1]` 是中文內容 ， 恰好可以搭配 `state.Lang` 做內容的切換 （ 並且 `state.Lang` 狀態會傳入其他更小的元件中，一層一層傳入 ）
 
-    Notice that `Lang` properity of `state` switch between '0' and `1` , additionally , `content` array ( the array that store content of website , and that  `content[0]` is English content , `content[1]` is Chinese content , so that the content of website would switch between English and Chinese while the `state.Lang` switch between `0` and `1` ) 
+#### HomePage
+社團網站首頁( 這邊是 App 最主要的內容 )
 
-#### HomePage 
-The Home page of website ( most of code in Application )
+主要元件位於`../src/components/Home.js`，並引入 `TextBackground.js` , `About.js` , `Advantage.js` , `Course.js` 和 `LinkedListBackground.js` 等元件
 
-the main component located in `../src/components/Home.js`，which include `TextBackground.js` , `About.js` , `Advantage.js` , `Course.js` and `LinkedListBackground.js` these components
-
-The structure of `HomePage` is defined as the following : 
-
+`HomePage` 架構如下 ： 
 ```
 HomePage{
     Header{}
@@ -229,26 +231,32 @@ HomePage{
     }
 }
 ```
-**Components information :**
+
+**元件說明：**
 - **TextBackforund :**
 
-    Including the cyber style animation background & typing effect titles.
+    最上方有 cyber 感的動畫背景 & 有打字機效果的循環 Title 
 - **About :**
 
-    Section of 「 About us 」and three introduction images with different laywers .
+    「關於我們」的區塊，包含右側三張有層次介紹的圖片
+- **Advantage :**
+
+    四個並列的優勢卡
 - **Course :**
 
-    Four courses information cards 
+    課程資訊
 - **LinkedListBackground :**
 
-    Link of Members page & Linked-List animation background section 
+    在最下方有「社團成員」的超連結 ＆ Linked-List 動畫背景的區塊
 
-#### MemberPage 
-The structure of members page is more simple than Home page .
 
-The main components are located `../src/components/Members.js` 
 
-The structure of `MembersPage` : 
+#### MemberPage
+成員頁面的架構就比首頁簡單許多
+
+主要元件位於`../src/components/Members.js`
+
+`MembersPage` 架構如下：
 ```
 MembersPage{
     Header{}
@@ -267,36 +275,36 @@ MembersPage{
 }
 ```
 
-The main function is rendering differnet members data through `MembersCard` component on page .
+不過是將每屆的社團成員重複套入 `MembersCard` 元件中，並 render 到頁面上
 
-#### Other basic components 
+
+#### 其他基本元件 
 
 - **Header** : 
 
-    Including the top-left Logo , the middle navigaton bar that will only show on the computer devices , the top-right theme switch .  
+    包括左上的 Logo ， 電腦裝置才會顯示的中央導覽列 ，右上的主題切換
 - **SiderBar** : 
 
-    The side navigation bar that onlyt show on mobile device , located in `src/components/Trigger/SideBar.js` 
+    在行動裝置才會顯示的側導覽列，位於 `src/components/Trigger/SideBar.js` 
 - **Language** : 
 
-    switch language , located at the top-left area of Header . However , it isn't written in header component , it's written in  `src/components/Trigger/Language.js`  instead .
+    區換語言 ， 位在 Header 左上 ， 但是沒有寫入 header 元件中，而是在 `src/components/Trigger/Language.js` 
 - **Footer** : 
 
-    Including the social links ansd copyright .
+    包括社團的其他連結和 copyright 
 
 ### Routing 
 
 **Package** : [React Router V6](https://reactrouter.com/)
 
-[Document of React HashRouter](https://reactrouter.com/docs/en/v6/routers/hash-router)
+[React HashRouter 的文件](https://reactrouter.com/docs/en/v6/routers/hash-router)
 
-As an SPA ( Single Page Application ) , the only way to routing is `Hash Router` . 
-( Our members page route is `AppDomain/#/members` , if you want to add a new page ,  such as a course page . The URL of course page would be `AppDomain/#/members`)
+因為我們網站是 SPA （一頁式網站），所以唯一一個可以達成 routing 的方式是 `Hash Router`
+( 成員頁面的 route 是 `AppDomain/#/members` ， 假設你想要增加一個新頁面 ， 以課程頁面為例 ， 那課程頁面的 URL 會是 `AppDomain/#/members` )
 
-Our routing rule were also defined in `index.js` ( It's defined in `render()` method of `App` component at `line 550-600` )
+Routing 規則同樣也定義在 `index.js` ( 被定義在 `App` 元件的 `render()` 方法 , 約在 `line 550-600` )
 
-
-( Read [Nested Route Example in React Router quick turtorial](https://reactrouter.com/docs/en/v6/getting-started/tutorial#nested-routes) first before reading the following code )
+( 在看以下 code 前，請先閱讀 [Nested Route 在 React Router 快速教學中的範例](https://reactrouter.com/docs/en/v6/getting-started/tutorial#nested-routes) )
 
 ```js
 <div className={ ( this.state.IsDark===1? DARK:LIGHT )+'App'}>
@@ -318,13 +326,15 @@ Our routing rule were also defined in `index.js` ( It's defined in `render()` me
             </div>
 ```
 
-After some observation , we can find out that no mater which route , the `Language` and `Footer` components will be render on page ( They are not included in `Router` ) The `AppDomain/` route ( root route ) will render `App.HomePage` component , and that `AppDomain/#/members` will show members page . `<Route path='*' element={ < this.NotFoundPage/>}/>`this path will handle invalid route ( which can be seen as `404 Page` , For instance , if user direct to `AppDomain/#/cool`  , it will render `NotFoundPage` , because the `cool` route don't exist )
+可以看出不論是哪個 route ， `Language` 和 `Footer` 都會顯示在頁面中 （ 因為他們並沒有包在 `Router` 中 ）
+而`AppDomain/`(根目錄)會 render `App.HomePage` 這個元件，而`AppDomain/#/members`則是顯示成員頁面。而`<Route path='*' element={ < this.NotFoundPage/>}/>`這個 path 處理所有不合的 route （ 可以當作 `404 Page` ， 如用戶想連至 `AppDomain/#/cool` 這個 route 就會顯示 `NotFoundPage` 的內容 ，因為沒有 `cool` 這個 route ）  
 
-### Animation 
 
-The background animation at the begininning of page and the bottom of page are written in `p5.js` , and render through `react-p5` ( so that the animation can be render as JSX component on page )
+### 動畫 
 
-sourse code of `p5.js` animation : 
+首頁最上方和最下方的動畫都是由 `p5.js` 這個套件寫成的， 並透過 `react-p5`使`p5.js` 動畫有辦法被當成 JSX 元件渲染在畫面上。
+
+`p5.js` 動畫原始碼連結如下：
 - [cyber BackGround](https://openprocessing.org/sketch/1605892)
 - [Linked List Background](https://openprocessing.org/sketch/1605812)
 
