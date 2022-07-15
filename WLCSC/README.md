@@ -1,4 +1,4 @@
-<h4 align="center"><a href="https://github.com/jason810496/WLCSC/blob/master/README.md">English</a></h4>
+<h4 align="center"><a href="https://github.com/jason810496/WLCSC/blob/master/README_eng.md">English</a></h4>
 
 # 武陵資研網站
 
