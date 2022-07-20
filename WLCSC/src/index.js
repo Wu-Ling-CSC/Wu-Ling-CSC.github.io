@@ -47,7 +47,7 @@ import member25_Hollowha from './images/Members/25th-Hollowha.jpg';
 
 //27th
 import member27_Gary from './images/Members/27th-Gary.png';
-import member27_Lun from './images/Members/27th-Lun.jpg';
+import member27_Lun from './images/Members/27th-Lun.png';
 
 
 /*-- component --*/
@@ -401,6 +401,18 @@ const MembersContent = [
             year:'27',
             members:[
                 {
+                    name : "Ben Ku",
+                    position : "Director",
+                    content : "WLSH / Machine Learing / web crawler / Physics??? / I'm trash",
+                    contact:{
+                        FB : "https://www.facebook.com/profile.php?id=100014317513743",
+                        Github : "https://github.com/benku1129",
+                        IG :"https://www.instagram.com/gfanghua/",
+                        blog:null,
+                    }
+
+                },
+                {
                     name:"Gary Tsai",
                     position:"Vice Director",
                     content:"ethical hacker/basic algorithm/volley ball/anime(´≖◞౪◟≖)/I love Mayday",
@@ -560,7 +572,19 @@ const MembersContent = [
         {
             year:'27',
             members:[
+                
                 {
+                    name:"古芳華",
+                    position:"社長",
+                    content:"WLSH / 機器學習 / 爬蟲 / 物理??? /我超爛/不務正YA",
+                    img:"",
+                    contact:{
+                        facebook: null,
+                        github:null,
+                        instagram:"https://www.instagram.com/garytsai1130",
+                        blog:null,
+                    }
+                },{
                     name:"阿毅",
                     position:"副社長",
                     content:"駭不進欣河系統/還在學程競/APEX身法猴/看到這裡是不是想加入酷酷的資研呢？",
