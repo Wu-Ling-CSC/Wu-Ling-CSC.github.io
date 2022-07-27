@@ -688,7 +688,12 @@ class App extends React.Component {
     }
 
     NotFoundPage = ()=>{
-
+        return(
+        <div >
+            <Header callback={ ()=>this.handleTheme() }  />
+        
+        </div>
+        );
     }
 
     render(){
