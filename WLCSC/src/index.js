@@ -427,7 +427,7 @@ const MembersContent = [
                 {
                     name:"Lun",
                     position:"Education",
-                    content:"Unity/Arduino/Arch(based) Linux btw/Site creating/cyber secure/Would you like to try Linux?",
+                    content:"Unity/Arduino/Web/cyber secure/Linux/CTF",
                     img:member27_Lun,
                     contact:{
                         facebook: "https://www.facebook.com/profile.php?id=100012668715619",
@@ -599,8 +599,8 @@ const MembersContent = [
                 {
                     name:"謝倫",
                     position:"教學",
-                    content:"Unity/Arduino/Arch(based) Linux btw/架站/資安/要不要移民到Linux啊",
-                    img:"",
+                    content:"Unity/Arduino/Linux/架站/資安/CTF",
+                    img:member27_Lun,
                     contact:{
                         facebook: "https://www.facebook.com/profile.php?id=100012668715619",
                         github:"https://github.com/creaper9487",
